@@ -123,8 +123,7 @@ body {
 
 
 
-@media screen and (max-width:990px),
-(max-width:1024px) {
+@media screen and (max-width:990px) {
     .navbar-collapse {
         position: fixed;
         top: 0;
