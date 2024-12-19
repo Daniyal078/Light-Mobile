@@ -11,3 +11,6 @@ document.querySelector('.mask').addEventListener('click', () => {
     document.querySelector('.navbar-collapse').classList.remove('show')
     document.querySelector('.mask').style.display = 'none'
 })
+
+
+

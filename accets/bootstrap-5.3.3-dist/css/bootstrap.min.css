@@ -4179,15 +4179,15 @@ fieldset:disabled .btn {
 
 .dropdown-item:focus,
 .dropdown-item:hover {
-    color: var(--bs-dropdown-link-hover-color);
-    background-color: var(--bs-dropdown-link-hover-bg)
+    color: #ffff;
+    background-color: #F3A50D
 }
 
 .dropdown-item.active,
 .dropdown-item:active {
-    color: var(--bs-dropdown-link-active-color);
+    color: #fff;
     text-decoration: none;
-    background-color: var(--bs-dropdown-link-active-bg)
+    background-color: #F3A50D
 }
 
 .dropdown-item.disabled,
