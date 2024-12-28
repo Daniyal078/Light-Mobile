@@ -32,6 +32,10 @@ body {
 }
 
 .bg-main-light {
+    background: linear-gradient(20deg, #ffffff, #fffacf) !important;
+}
+
+.bg-main-light {
     background: #ffeecd;
 }
 
@@ -52,7 +56,7 @@ body {
 }
 
 .border-main {
-    border: 1px solid #ffd684;
+    border: 2px solid #ffd684;
 }
 
 .text-main {
