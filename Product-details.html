@@ -77,8 +77,8 @@
     <section class="py-lg-5 py-3">
         <div class="container">
             <div class="row justify-content-center gap-lg-0 gap-md-0 gap-3">
-                <div class="col-lg-6 col-md-5 col-11">
-                    <img src="accets/images/Spark.webp" width="100%" alt="">
+                <div class="col-lg-5 col-md-5 col-11">
+                    <img class="rounded-4" src="accets/images/Spark.webp" width="100%" alt="">
                 </div>
                 <div class="col-lg-6 col-md-7 col-11">
                     <div class="p-lg-3">
@@ -86,28 +86,50 @@
                         <div class="my-3">Choose a subscription plan:</div>
                         <div class="d-flex align-baseline my-2 gap-1">
                             <input type="radio" name="" id="">
-                            <label for="">$15.00 1 Month Subscription</label>
+                            <label class="pointer" for="">$15.00 1 Month Subscription</label>
                         </div>
 
                         <div class="d-flex align-baseline my-2 gap-1">
                             <input type="radio" name="" id="">
-                            <label for=""><span class="text-decoration-line-through text-muted">$45.00</span> <span
+                            <label  for=""><span class="pointer text-decoration-line-through text-muted">$45.00</span> <span
                                     class="fw-semibold text-decoration-underline">$40.50</span> (10% Discount) 3
                                 Month Subscription</label>
                         </div>
 
                         <div class="d-flex align-baseline my-2 gap-1">
                             <input type="radio" name="" id="">
-                            <label for=""><span class="text-decoration-line-through text-muted">$90.00</span> <span
+                            <label for=""><span class="pointer text-decoration-line-through text-muted">$90.00</span> <span
                                     class="fw-semibold text-decoration-underline">$76.50</span> (15% Discount) 6
                                 Month Subscription</label>
                         </div>
 
-                        <input class="form-control w-25 border border-black" min="1" value="1" type="number" name=""
-                            id="">
+                        <div class="fs-3 my-3 fw-bold">Which Method Would you like to use?</div>
 
-                        <a href="Checkout.html">
-                            <button class="btn btn-dark mt-2 px-4 py-2">Sign up</button>
+
+                        <div class="row">
+                            <div class="col-md-6 col-12 mb-3">
+                                <div
+                                    class="d-flex align-items-center gap-2 px-md-2 p-2 bg-gradient rounded-3 border-main pointer">
+                                    <input type="radio" name="" id="">
+                                    <div>
+                                        <div class="fw-bold">eSIM (Digital)</div>
+                                        <div class="fs-sm">Instant digital delivery</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-12 mb-3">
+                                <div class="d-flex align-items-center gap-2 px-md-2 p-2 bg-gradient rounded-3 border pointer">
+                                    <input type="radio" name="" id="">
+                                    <div>
+                                        <div class="fw-bold">SIM Card</div>
+                                        <div class="fs-sm">Use your Carrier's physical SIM</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="Check-your-imei.html">
+                            <button class="btn text-white bg-main mt-2 px-4 py-2">Continue</button>
                         </a>
                     </div>
                 </div>

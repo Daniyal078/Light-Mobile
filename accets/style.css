@@ -23,6 +23,14 @@ body {
     background-color: #000;
 }
 
+.pointer{
+    cursor: pointer;
+}
+
+.hover-white:hover {
+    color: #fff !important;
+}
+
 .btn:active {
     background-color: #616060 !important;
 }
@@ -67,6 +75,10 @@ body {
     background: linear-gradient(to bottom, #fde2ab, #fff, #fff, #fff, #fde2ab);
 }
 
+
+.bg-blur {
+    backdrop-filter: blur(30px);
+}
 
 .accordion-button {
     background-color: #FFF8EA;

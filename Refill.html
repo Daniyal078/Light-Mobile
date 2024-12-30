@@ -10,12 +10,14 @@
         integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@25.2.0/build/css/intlTelInput.css">
     <title>Home</title>
 </head>
 
-
 <style>
-
+    .iti--inline-dropdown {
+        width: 100% !important;
+    }
 </style>
 
 <body>
@@ -74,90 +76,79 @@
     </nav>
 
 
-    <section class="py-5 bg-white">
-        <!-- <div class="text-center py-4 bg-black text-white fw-semibold fs-2 mb-5">Activate Your Grab & Go</div> -->
+    <section class=" py-3">
+        <div class="container py-5">
+            <div class="d-block mx-auto col-lg-6 col-md-9 col-11 shadow p-4 rounded-3">
+                <div class="d-flex align-items-center gap-3">
+                    <img src="accets/images/Spark.webp" width="100" alt="">
+                    <div>
+                        <div class="mb-2"><span class="fw-semibold">Spark X</span></div>
+                        <div><span class="fw-semibold">Plan Details:</span> Spark X ( $5 - $300 USD)</div>
+                    </div>
+                </div>
 
-        <!-- <div class="container mb-5">
-            <div class="row justify-content-around">
-                <div class="col-lg-auto">
-                    <div class="text-center">
-                        <div class="bg-main rounded-circle px-3 py-2 text-white">1</div>
-                        <div>Step 1</div>
+
+                <div class="p-lg-3">
+                    <label for="" class="fw-medium mb-2">Let's start with the mobile number you want to Refill</label>
+                    <input id="phone" type="tel" type="text" class="form-control border border-dark w-100"
+                        placeholder="Enter your mobile number">
+
+
+
+                    <div class="my-3">Choose a subscription plan:</div>
+                    <div class="d-flex align-baseline my-2 gap-1">
+                        <input type="radio" name="" id="">
+                        <label for="">$15.00 1 Month Subscription</label>
                     </div>
-                </div>
-                <div class="col-lg-auto">
-                    <div class="text-center">
-                        <div class="bg-main rounded-circle px-3 py-2 text-white">1</div>
-                        <div>Step 1</div>
+
+                    <div class="d-flex align-baseline my-2 gap-1">
+                        <input type="radio" name="" id="">
+                        <label for=""><span class="text-decoration-line-through text-muted">$45.00</span> <span
+                                class="fw-semibold text-decoration-underline">$40.50</span> (10% Discount) 3
+                            Month Subscription</label>
                     </div>
-                </div>
-                <div class="col-lg-auto">
-                    <div class="text-center">
-                        <div class="bg-main rounded-circle px-3 py-2 text-white">1</div>
-                        <div>Step 1</div>
+
+                    <div class="d-flex align-baseline my-2 gap-1">
+                        <input type="radio" name="" id="">
+                        <label for=""><span class="text-decoration-line-through text-muted">$90.00</span> <span
+                                class="fw-semibold text-decoration-underline">$76.50</span> (15% Discount) 6
+                            Month Subscription</label>
                     </div>
+
+                    <div class="fs-3 my-3 fw-bold">Which Method Would you like to use?</div>
+
+
+                    <div class="row">
+                        <div class="col-md-6 col-12 mb-3">
+                            <div class="d-flex align-items-center gap-2 px-md-2 p-2 bg-gradient rounded-3 border-main">
+                                <input type="radio" name="" id="">
+                                <div>
+                                    <div class="fw-bold">eSIM (Digital)</div>
+                                    <div class="fs-sm">Instant digital delivery</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-12 mb-3">
+                            <div class="d-flex align-items-center gap-2 px-md-2 p-2 bg-gradient rounded-3 border">
+                                <input type="radio" name="" id="">
+                                <div>
+                                    <div class="fw-bold">SIM Card</div>
+                                    <div class="fs-sm">Use your Carrier's physical SIM</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="Checkout.html">
+                        <button class="btn text-white bg-main mt-2 px-4 py-2">Continue</button>
+                    </a>
                 </div>
             </div>
-        </div> -->
-
-        <div class="col-lg-6 col-md-10 col-11 d-block mx-auto bg-white rounded-3 p-md-5 p-4 d-flex flex-column shadow">
-
-            <div class="text-center mb-4 fs-3 fw-semibold">Activate Your Grab & Go</div>
-
-            <div class="row justify-content-center mb-4 align-items-center">
-                <div class="col-auto p-0">
-                    <div class="text-center">
-                        <div class="bg-main rounded-circle px-3 py-2 text-white">1</div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-3">
-                    <div class="border-bottom w-100 border-warning"></div>
-                </div>
-                <div class="col-auto p-0">
-                    <div class="text-center">
-                        <div class="bg-white border-main rounded-circle px-3 py-2">2</div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-3">
-                    <div class="border-bottom w-100 border-warning"></div>
-                </div>
-                <div class="col-auto p-0">
-                    <div class="text-center">
-                        <div class="bg-white border-main rounded-circle px-3 py-2">3</div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="fs-5 fw-semibold mb-3">Plan Information</div>
-
-            <div class="d-flex align-items-center gap-3">
-                <img src="accets/images/Spark.webp" width="80" alt="">
-                <div>
-                    <div class="mb-2"><span class="fw-semibold">Spark X</span></div>
-                    <div><span class="fw-semibold">Plan Details:</span> Spark X ( $5 - $300 USD)</div>
-                </div>
-            </div>
-
-            <div class="fs-3 my-3 fw-bold">Check your IMEI number for Compatibility</div>
-
-            <label for="" class="mb-2">Enter your IMEI number</label>
-            <div class="d-flex gap-2 flex-sm-nowrap flex-wrap justify-content-end">
-                <input type="text" class="form-control py-2 border-main outline-none bg-main-light"
-                    placeholder="Enter IMEI">
-                <button class="btn btn-outline-danger hover">Check</button>
-                <button class="btn bg-main text-white">Skip</button>
-            </div>
-
-
-            <a href="Complete-activaton.html">
-                <button class="btn bg-main text-white d-block ms-auto mt-5 px-5">Continue</button>
-            </a>
-        </div>
         </div>
     </section>
 
 
-    <footer class="bg-gradient pt-5">
+    <footer class="bg-gradient">
         <div class="container py-5 px-lg-2 px-md-2 px-4">
             <div class="row">
                 <div class="col-lg-3 col-md-12 mb-lg-0 mb-4">
@@ -241,6 +232,15 @@
         crossorigin="anonymous"></script>
     <script src="accets/bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@25.2.0/build/js/intlTelInput.min.js"></script>
+    <script>
+        const input = document.querySelector("#phone");
+        window.intlTelInput(input, {
+            loadUtils: () => import("https://cdn.jsdelivr.net/npm/intl-tel-input@25.2.0/build/js/utils.js"),
+        });
+    </script>
 
     <script>
         AOS.init();
