@@ -76,71 +76,43 @@
     </nav>
 
 
-    <section class=" py-3">
+    <section class="">
         <div class="container py-5">
-            <div class="d-block mx-auto col-lg-6 col-md-9 col-11 shadow p-4 rounded-3">
-                <div class="d-flex align-items-center gap-3">
-                    <img src="accets/images/Spark.webp" width="100" alt="">
+            <div class="d-block mx-auto col-lg-7 col-md-9 col-11 shadow p-md-4 p-2 rounded-3">
+                <div class="d-flex align-items-center gap-3 bg-main text-white p-3 py-4 rounded-3">
+                    <img class="rounded-3" src="accets/images/Spark.webp" width="100" alt="">
                     <div>
-                        <div class="mb-2"><span class="fw-semibold">Spark X</span></div>
+                        <div class="mb-2"><span class="fw-semibold fs-2">Spark X</span></div>
                         <div><span class="fw-semibold">Plan Details:</span> Spark X ( $5 - $300 USD)</div>
                     </div>
                 </div>
 
 
-                <div class="p-lg-3">
+                <div class="p-3">
                     <label for="" class="fw-medium mb-2">Let's start with the mobile number you want to Refill</label>
+                    <input id="phone" type="tel" type="text" class="form-control border border-dark w-100"
+                        placeholder="Enter your mobile number">
+                    <label for="" class="fw-medium my-2 mt-3">Confirm your mobile number</label>
                     <input id="phone" type="tel" type="text" class="form-control border border-dark w-100"
                         placeholder="Enter your mobile number">
 
 
-
-                    <div class="my-3">Choose a subscription plan:</div>
-                    <div class="d-flex align-baseline my-2 gap-1">
-                        <input type="radio" name="" id="">
-                        <label for="">$15.00 1 Month Subscription</label>
+                    <div class="d-flex align-items-baseline gap-2 mt-3">
+                        <input type="checkbox" name="" id="confirmed">
+                        <label for="confirmed">I have confirmed that I entered the correct phone number. I understand
+                            that this sale is final as
+                            the minutes cannot be moved nor transferred once loaded to the phone number I have provided
+                            above.</label>
+                    </div>
+                    <div class="d-flex align-items-baseline gap-2 mt-3">
+                        <input type="checkbox" name="" id="Agree">
+                        <label for="Agree">Agree with Cricket Wireless Product Policies & Sales.</label>
                     </div>
 
-                    <div class="d-flex align-baseline my-2 gap-1">
-                        <input type="radio" name="" id="">
-                        <label for=""><span class="text-decoration-line-through text-muted">$45.00</span> <span
-                                class="fw-semibold text-decoration-underline">$40.50</span> (10% Discount) 3
-                            Month Subscription</label>
-                    </div>
 
-                    <div class="d-flex align-baseline my-2 gap-1">
-                        <input type="radio" name="" id="">
-                        <label for=""><span class="text-decoration-line-through text-muted">$90.00</span> <span
-                                class="fw-semibold text-decoration-underline">$76.50</span> (15% Discount) 6
-                            Month Subscription</label>
-                    </div>
-
-                    <div class="fs-3 my-3 fw-bold">Which Method Would you like to use?</div>
-
-
-                    <div class="row">
-                        <div class="col-md-6 col-12 mb-3">
-                            <div class="d-flex align-items-center gap-2 px-md-2 p-2 bg-gradient rounded-3 border-main">
-                                <input type="radio" name="" id="">
-                                <div>
-                                    <div class="fw-bold">eSIM (Digital)</div>
-                                    <div class="fs-sm">Instant digital delivery</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-12 mb-3">
-                            <div class="d-flex align-items-center gap-2 px-md-2 p-2 bg-gradient rounded-3 border">
-                                <input type="radio" name="" id="">
-                                <div>
-                                    <div class="fw-bold">SIM Card</div>
-                                    <div class="fs-sm">Use your Carrier's physical SIM</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
                     <a href="Checkout.html">
-                        <button class="btn text-white bg-main mt-2 px-4 py-2">Continue</button>
+                        <button class="btn text-white bg-main mt-3 px-4 py-2">Continue</button>
                     </a>
                 </div>
             </div>
