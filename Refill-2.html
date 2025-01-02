@@ -11,6 +11,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@25.2.0/build/css/intlTelInput.css">
+
     <title>Home</title>
 </head>
 
@@ -76,44 +77,47 @@
     </nav>
 
 
-    <section class="">
-        <div class="container py-5">
-            <div class="d-block mx-auto col-lg-7 col-md-9 col-11 shadow p-md-4 p-2 rounded-3">
-                <div class="d-flex align-items-center gap-3 bg-main text-white p-3 py-4 rounded-3">
-                    <img class="rounded-3" src="accets/images/Spark.webp" width="100" alt="">
-                    <div>
-                        <div class="mb-2"><span class="fw-semibold fs-2">Spark X</span></div>
-                        <div><span class="fw-semibold">Plan Details:</span> Spark X ( $5 - $300 USD)</div>
-                    </div>
+    <section class="py-lg-5 py-3">
+        <div class="container">
+            <div class="row justify-content-center gap-lg-0 gap-md-0 gap-3">
+                <div class="col-lg-5 col-md-5 col-11">
+                    <img class="rounded-4" src="accets/images/Spark.webp" width="100%" alt="">
                 </div>
+                <div class="col-lg-6 col-md-7 col-11">
+                    <div class="p-3">
+
+                        <div class="mb-4">
+                            <div class="mb-2"><span class="fw-semibold fs-2">Spark X</span></div>
+                            <div><span class="fw-semibold">Plan Details:</span> Spark X ( $5 - $300 USD)</div>
+                        </div>
 
 
-                <div class="p-3">
-                    <label for="" class="fw-medium mb-2">Let's start with the mobile number you want to Refill</label>
-                    <input id="phone" type="tel" type="text" class="form-control border border-dark w-100"
-                        placeholder="Enter your mobile number">
-                    <label for="" class="fw-medium my-2 mt-3">Confirm your mobile number</label>
-                    <input id="phone" type="tel" type="text" class="form-control border border-dark w-100"
-                        placeholder="Enter your mobile number">
-
-
-                    <div class="d-flex align-items-baseline gap-2 mt-3">
-                        <input type="checkbox" name="" id="confirmed">
-                        <label for="confirmed">I have confirmed that I entered the correct phone number. I understand
-                            that this sale is final as
-                            the minutes cannot be moved nor transferred once loaded to the phone number I have provided
-                            above.</label>
+                        <label for="" class="fw-medium mb-2">Let's start with the mobile number you want to Refill</label>
+                        <input id="phone" type="tel" type="text" class="form-control border border-dark w-100"
+                            placeholder="Enter your mobile number">
+                        <label for="" class="fw-medium my-2 mt-3">Confirm your mobile number</label>
+                        <input id="phone" type="tel" type="text" class="form-control border border-dark w-100"
+                            placeholder="Enter your mobile number">
+    
+    
+                        <div class="d-flex align-items-baseline gap-2 mt-3">
+                            <input type="checkbox" name="" id="confirmed">
+                            <label for="confirmed">I have confirmed that I entered the correct phone number. I understand
+                                that this sale is final as
+                                the minutes cannot be moved nor transferred once loaded to the phone number I have provided
+                                above.</label>
+                        </div>
+                        <div class="d-flex align-items-baseline gap-2 mt-3">
+                            <input type="checkbox" name="" id="Agree">
+                            <label for="Agree">Agree with Cricket Wireless Product Policies & Sales.</label>
+                        </div>
+    
+    
+    
+                        <a href="Checkout.html">
+                            <button class="btn text-white bg-main mt-3 px-4 py-2">Continue</button>
+                        </a>
                     </div>
-                    <div class="d-flex align-items-baseline gap-2 mt-3">
-                        <input type="checkbox" name="" id="Agree">
-                        <label for="Agree">Agree with Cricket Wireless Product Policies & Sales.</label>
-                    </div>
-
-
-
-                    <a href="Checkout.html">
-                        <button class="btn text-white bg-main mt-3 px-4 py-2">Continue</button>
-                    </a>
                 </div>
             </div>
         </div>
@@ -132,6 +136,7 @@
                         <i class="fa-brands fs-4 p-2 rounded-circle border fa-square-instagram"></i>
                         <i class="fa-brands fs-4 p-2 rounded-circle border fa-square-twitter"></i>
                     </div>
+
                 </div>
                 <div class="col-lg-3 col-md-4 mb-lg-0 mb-4">
                     <div class="fw-bold fs-5 mb-3">Service Features</div>
@@ -204,7 +209,6 @@
     <script src="accets/bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-
     <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@25.2.0/build/js/intlTelInput.min.js"></script>
     <script>
         const input = document.querySelector("#phone");
@@ -212,6 +216,7 @@
             loadUtils: () => import("https://cdn.jsdelivr.net/npm/intl-tel-input@25.2.0/build/js/utils.js"),
         });
     </script>
+
 
     <script>
         AOS.init();

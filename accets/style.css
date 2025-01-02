@@ -48,7 +48,7 @@ body {
 }
 
 .bg-gradient {
-    background: linear-gradient(42deg, #ffeecd, #fff) !important;
+    background: linear-gradient(180deg, #ffeecd, #fff) !important;
 }
 
 .btn-outline-main {
@@ -133,8 +133,12 @@ body {
 }
 
 
-
-@media screen and (max-width:990px) {
+@media screen and (max-width:1024px) {
+    .responsive-image {
+        width: 70%;
+    }
+}
+@media screen and (max-width:991px) {
     .navbar-collapse {
         position: fixed;
         top: 0;
