@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="accets/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="accets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@25.2.0/build/css/intlTelInput.css">
+    <title>Home</title>
+</head>
+
+<style>
+    .iti--inline-dropdown {
+        width: 100% !important;
+    }
+</style>
+
+<body>
+    <div class="mask"></div>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container bg-white p-2 mx-lg-auto mx-md-auto mx-2 rounded-pill">
+            <div class="d-flex justify-content-between border rounded-pill px-4 w-100">
+                <a class=" mx-0 my-2" href="Home.html"><img src="accets/images/Light-mobile-logo.png" width="80%"
+                        alt=""></a>
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars-staggered"></i>
+                </button>
+                <div class="collapse navbar-collapse d-block" id="navbarSupportedContent">
+                    <i class="d-lg-none fa-solid fa-circle-right text-main fs-2 nav-close"></i>
+                    <ul class="navbar-nav mx-auto align-items-lg-center gap-lg-2 gap-xl-4">
+
+                        <li class="nav-item">
+                            <a class="nav-link fw-medium text-main" aria-current="page" href="Home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-medium text-black" aria-current="page"
+                                href="Priceing.html">Pricing</a>
+                        </li>
+                        <div class="dropdown">
+                            <a class="dropdown-toggle fw-medium" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Services
+                            </a>
+
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                        <li class="nav-item">
+                            <a class="nav-link fw-medium text-black" aria-current="page"
+                                href="Coverage.html">Coverage</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-medium text-black" aria-current="page"
+                                href="Contact-us.html">Contact</a>
+                        </li>
+
+                    </ul>
+                    <div class="d-lg-flex gap-2 ">
+                        <button class="btn bg-main btn-sm text-white px-3" type="submit">Login Now</button>
+                        <button class="btn bg-main btn-sm text-white px-3" type="submit">Register Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <section>
+        <div class="container mt-4 mb-5">
+            <div class="row flex-lg-row flex-column flex-sm-nowrap justify-content-center justify-content-sm-between">
+                <div class="col-xl-3 col-lg-3 d-lg-block d-none">
+                    <div class="rounded-3 pe-0 p-2 profile-bg shadow">
+                        <!-- Tabs Start -->
+                        <div class="container tabs rounded-3 pe-0">
+                            <div class="d-flex align-items-center my-4">
+                                <label for="edit-img"
+                                    class="d-flex align-items-center gap-3 position-relative edit-img-main">
+                                    <img class="rounded-circle pointer edit-image"
+                                        src="https://i.pinimg.com/736x/8b/16/7a/8b167af653c2399dd93b952a48740620.jpg"
+                                        width="30%" alt="">
+                                    <i class="fa-solid fa-user-pen position-absolute text-white fs-4 edit-icon"
+                                        style="left: 26px; bottom: 24px;"></i>
+                                    <div>
+
+                                        <div class="fs-5 fw-semibold text-nowrap">Iron Men</div>
+                                        <div class="fs-small">Traveler</div>
+                                    </div>
+                                    <input class="d-none" type="file" name="" id="edit-img">
+                                </label>
+                            </div>
+                            <ul class="tab-list d-grid p-0">
+                                <li
+                                    class="text-white pointer rounded-start-3 mb-2 py-3 px-3 bg-main list-group-item fs-6 py-1 my-1 fw-semibold">
+                                    <i class="fa-regular fa-address-card me-2"></i><a
+                                        href="Account-Information.html">Account
+                                        Inforation</a>
+                                </li>
+                                <li
+                                    class="text-black pointer rounded-3 mb-2 py-3 px-3 list-group-item fs-6 py-1 my-1 fw-semibold">
+                                    <i class="fa-regular fa-credit-card me-2"></i><a href="Saved-Cards.html">Saved
+                                        Cards</a>
+                                </li>
+                                <li
+                                    class="fs-6 text-black pointer rounded-3 mb-2 py-3 px-3 list-group-item fw-semibold py-1 my-1">
+                                    <i class="fa-regular fa-money-bill-1 me-2"></i><a href="Orders.html">Orders</a>
+                                </li>
+                                <li
+                                    class="fs-6 text-black pointer rounded-3 mb-2 py-3 px-3 list-group-item fw-semibold py-1 my-1">
+                                    <i class="fa-regular fa-money-bill-1 me-2"></i><a href="wallet.html">Wallet</a>
+                                </li>
+                                <li
+                                    class="fs-6 text-danger pointer rounded-3 mb-2 py-3 px-3 list-group-item fw-semibold py-1 my-1">
+                                    <i class="fa-solid fa-arrow-right-from-bracket me-2"></i>Logout
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Tabs End -->
+                    </div>
+                </div>
+                <div class="col-xl-9 col-lg-9 rounded-3">
+                    <section class="px-lg-0 px-3">
+                        <div class="row">
+                            <div class="tabs-content my-0 active" id="content-select-1">
+                                <div>
+                                    <form action="">
+                                        <div class="row">
+                                            <div class="my-lg-3 px-lg-4">
+                                                <div class="bg-white">
+                                                    <div class="fs-4 fw-bold mb-lg-3 mb-md-3 mb-5">
+                                                        <a href="main-profile.html">
+                                                            <i
+                                                                class="d-xl-none d-inline fa-solid fa-chevron-left me-3"></i>
+                                                        </a>
+                                                        Account Information
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-lg col-md">
+                                                            <div class="form-floating mb-3">
+                                                                <input type="text" class="form-control"
+                                                                    id="floatingInput" placeholder="First Name">
+                                                                <label for="floatingInput">First Name</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg col-md">
+                                                            <div class="form-floating mb-3">
+                                                                <input type="text" class="form-control"
+                                                                    id="floatingInput" placeholder="Last Name">
+                                                                <label for="floatingInput">Last Name</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-lg-12 col-md-12">
+                                                            <div class="form-floating mb-3">
+                                                                <input type="text" class="form-control"
+                                                                    id="floatingInput" placeholder="First Name">
+                                                                <label for="floatingInput">Address</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-6">
+                                                            <div class="form-floating mb-3">
+                                                                <input type="text" class="form-control"
+                                                                    id="floatingInput" placeholder="Last Name">
+                                                                <label for="floatingInput">Apt, suite ,street</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-6">
+                                                            <div class="form-floating mb-3">
+                                                                <input type="text" class="form-control"
+                                                                    id="floatingInput" placeholder="Last Name">
+                                                                <label for="floatingInput">City</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-6">
+                                                            <select class="form-select py-3 mb-3 border" name="state"
+                                                                id="state">
+                                                                <option value="" selected="selected">Select a State
+                                                                </option>
+                                                                <option value="AL">Alabama</option>
+                                                                <option value="AK">Alaska</option>
+                                                                <option value="AZ">Arizona</option>
+                                                                <option value="AR">Arkansas</option>
+                                                                <option value="CA">California</option>
+                                                                <option value="CO">Colorado</option>
+                                                                <option value="CT">Connecticut</option>
+                                                                <option value="DE">Delaware</option>
+                                                                <option value="DC">District Of Columbia</option>
+                                                                <option value="FL">Florida</option>
+                                                                <option value="GA">Georgia</option>
+                                                                <option value="HI">Hawaii</option>
+                                                                <option value="ID">Idaho</option>
+                                                                <option value="IL">Illinois</option>
+                                                                <option value="IN">Indiana</option>
+                                                                <option value="IA">Iowa</option>
+                                                                <option value="KS">Kansas</option>
+                                                                <option value="KY">Kentucky</option>
+                                                                <option value="LA">Louisiana</option>
+                                                                <option value="ME">Maine</option>
+                                                                <option value="MD">Maryland</option>
+                                                                <option value="MA">Massachusetts</option>
+                                                                <option value="MI">Michigan</option>
+                                                                <option value="MN">Minnesota</option>
+                                                                <option value="MS">Mississippi</option>
+                                                                <option value="MO">Missouri</option>
+                                                                <option value="MT">Montana</option>
+                                                                <option value="NE">Nebraska</option>
+                                                                <option value="NV">Nevada</option>
+                                                                <option value="NH">New Hampshire</option>
+                                                                <option value="NJ">New Jersey</option>
+                                                                <option value="NM">New Mexico</option>
+                                                                <option value="NY">New York</option>
+                                                                <option value="NC">North Carolina</option>
+                                                                <option value="ND">North Dakota</option>
+                                                                <option value="OH">Ohio</option>
+                                                                <option value="OK">Oklahoma</option>
+                                                                <option value="OR">Oregon</option>
+                                                                <option value="PA">Pennsylvania</option>
+                                                                <option value="RI">Rhode Island</option>
+                                                                <option value="SC">South Carolina</option>
+                                                                <option value="SD">South Dakota</option>
+                                                                <option value="TN">Tennessee</option>
+                                                                <option value="TX">Texas</option>
+                                                                <option value="UT">Utah</option>
+                                                                <option value="VT">Vermont</option>
+                                                                <option value="VA">Virginia</option>
+                                                                <option value="WA">Washington</option>
+                                                                <option value="WV">West Virginia</option>
+                                                                <option value="WI">Wisconsin</option>
+                                                                <option value="WY">Wyoming</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-6">
+                                                            <div class="form-floating mb-3">
+                                                                <input type="text" class="form-control"
+                                                                    id="floatingInput" placeholder="Last Name">
+                                                                <label for="floatingInput">Zip Code</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex justify-content-end mb-3">
+                                                        <button class="btn bg-main text-white px-4" type="button"
+                                                            data-bs-toggle="modal"
+                                                            data-bs-target="#changeAddress">Edit</button>
+                                                    </div>
+
+                                                    <!-- change Address Modal -->
+                                                    <div class="modal fade" id="changeAddress" tabindex="-1"
+                                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                        <div class="modal-dialog">
+                                                            <div class="modal-content">
+                                                                <button type="button" class="btn-close ms-auto p-3"
+                                                                    data-bs-dismiss="modal" aria-label="Close"></button>
+                                                                <div class="modal-body pt-0 p-3 pb-5">
+                                                                    <h4> Change Address</h4>
+                                                                    <p>please enter your email and current password
+                                                                        to
+                                                                        change your current email</p>
+                                                                    <div class="row">
+                                                                        <div class="col-lg-12 col-md-12">
+                                                                            <div class="form-floating mb-3">
+                                                                                <input type="text" class="form-control"
+                                                                                    id="floatingInput"
+                                                                                    placeholder="First Name">
+                                                                                <label
+                                                                                    for="floatingInput">Address</label>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-lg-6 col-md-6">
+                                                                            <div class="form-floating mb-3">
+                                                                                <input type="text" class="form-control"
+                                                                                    id="floatingInput"
+                                                                                    placeholder="Last Name">
+                                                                                <label for="floatingInput">Apt, suite
+                                                                                    ,street</label>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-lg-6 col-md-6">
+                                                                            <div class="form-floating mb-3">
+                                                                                <input type="text" class="form-control"
+                                                                                    id="floatingInput"
+                                                                                    placeholder="Last Name">
+                                                                                <label for="floatingInput">City</label>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-lg-6 col-md-6">
+                                                                            <select class="form-select py-3 mb-3 border"
+                                                                                name="state" id="state">
+                                                                                <option value="" selected="selected">
+                                                                                    Select a
+                                                                                    State</option>
+                                                                                <option value="AL">Alabama</option>
+                                                                                <option value="AK">Alaska</option>
+                                                                                <option value="AZ">Arizona</option>
+                                                                                <option value="AR">Arkansas</option>
+                                                                                <option value="CA">California</option>
+                                                                                <option value="CO">Colorado</option>
+                                                                                <option value="CT">Connecticut</option>
+                                                                                <option value="DE">Delaware</option>
+                                                                                <option value="DC">District Of Columbia
+                                                                                </option>
+                                                                                <option value="FL">Florida</option>
+                                                                                <option value="GA">Georgia</option>
+                                                                                <option value="HI">Hawaii</option>
+                                                                                <option value="ID">Idaho</option>
+                                                                                <option value="IL">Illinois</option>
+                                                                                <option value="IN">Indiana</option>
+                                                                                <option value="IA">Iowa</option>
+                                                                                <option value="KS">Kansas</option>
+                                                                                <option value="KY">Kentucky</option>
+                                                                                <option value="LA">Louisiana</option>
+                                                                                <option value="ME">Maine</option>
+                                                                                <option value="MD">Maryland</option>
+                                                                                <option value="MA">Massachusetts
+                                                                                </option>
+                                                                                <option value="MI">Michigan</option>
+                                                                                <option value="MN">Minnesota</option>
+                                                                                <option value="MS">Mississippi</option>
+                                                                                <option value="MO">Missouri</option>
+                                                                                <option value="MT">Montana</option>
+                                                                                <option value="NE">Nebraska</option>
+                                                                                <option value="NV">Nevada</option>
+                                                                                <option value="NH">New Hampshire
+                                                                                </option>
+                                                                                <option value="NJ">New Jersey</option>
+                                                                                <option value="NM">New Mexico</option>
+                                                                                <option value="NY">New York</option>
+                                                                                <option value="NC">North Carolina
+                                                                                </option>
+                                                                                <option value="ND">North Dakota</option>
+                                                                                <option value="OH">Ohio</option>
+                                                                                <option value="OK">Oklahoma</option>
+                                                                                <option value="OR">Oregon</option>
+                                                                                <option value="PA">Pennsylvania</option>
+                                                                                <option value="RI">Rhode Island</option>
+                                                                                <option value="SC">South Carolina
+                                                                                </option>
+                                                                                <option value="SD">South Dakota</option>
+                                                                                <option value="TN">Tennessee</option>
+                                                                                <option value="TX">Texas</option>
+                                                                                <option value="UT">Utah</option>
+                                                                                <option value="VT">Vermont</option>
+                                                                                <option value="VA">Virginia</option>
+                                                                                <option value="WA">Washington</option>
+                                                                                <option value="WV">West Virginia
+                                                                                </option>
+                                                                                <option value="WI">Wisconsin</option>
+                                                                                <option value="WY">Wyoming</option>
+                                                                            </select>
+                                                                        </div>
+                                                                        <div class="col-lg-6 col-md-6">
+                                                                            <div class="form-floating mb-3">
+                                                                                <input type="text" class="form-control"
+                                                                                    id="floatingInput"
+                                                                                    placeholder="Last Name">
+                                                                                <label for="floatingInput">Zip
+                                                                                    Code</label>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <button
+                                                                        class="btn main-bg text-white px-5 mt-3 d-block mx-auto">
+                                                                        Changes</button>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="row">
+                                                        <div class="col-lg col-md">
+                                                            <div class="form-floating mb-3">
+                                                                <input type="email" class="form-control"
+                                                                    id="floatingInput" placeholder="Email">
+                                                                <label for="floatingInput">Email</label>
+                                                            </div>
+
+                                                            <div
+                                                                class="d-flex justify-content-end mt-3 mb-lg-0 mb-md-0 mb-3">
+                                                                <button class="btn bg-main text-white px-4"
+                                                                    type="button" data-bs-toggle="modal"
+                                                                    data-bs-target="#changeEmail">Edit</button>
+                                                            </div>
+
+                                                            <!-- change email Modal -->
+                                                            <div class="modal fade" id="changeEmail" tabindex="-1"
+                                                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                                <div class="modal-dialog">
+                                                                    <div class="modal-content">
+                                                                        <button type="button"
+                                                                            class="btn-close ms-auto p-3"
+                                                                            data-bs-dismiss="modal"
+                                                                            aria-label="Close"></button>
+                                                                        <div class="modal-body pt-0 p-3 pb-5">
+                                                                            <h4> Change Email</h4>
+                                                                            <p>please enter your email and current
+                                                                                password
+                                                                                to
+                                                                                change your current email</p>
+                                                                            <div class="form-floating mb-3">
+                                                                                <input type="email" class="form-control"
+                                                                                    id="floatingInput"
+                                                                                    placeholder="Email">
+                                                                                <label for="floatingInput">Email</label>
+                                                                            </div>
+                                                                            <div class="form-floating mb-3">
+                                                                                <input type="email" class="form-control"
+                                                                                    id="floatingInput"
+                                                                                    placeholder="Email">
+                                                                                <label for="floatingInput">New
+                                                                                    Email</label>
+                                                                            </div>
+                                                                            <div class="form-floating mb-3">
+                                                                                <input type="password"
+                                                                                    class="form-control"
+                                                                                    id="floatingInput"
+                                                                                    placeholder="Email">
+                                                                                <label for="floatingInput">Current
+                                                                                    password</label>
+                                                                            </div>
+
+                                                                            <button
+                                                                                class="btn main-bg text-white px-5 mt-3 d-block mx-auto">
+                                                                                Changes</button>
+                                                                        </div>
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+
+
+                                                        <div class="col-lg col-md">
+                                                            <div class="form-floating">
+                                                                <input type="password" class="form-control"
+                                                                    id="floatingInput" placeholder="Current Password">
+                                                                <label for="floatingInput">Current Password</label>
+                                                            </div>
+                                                            <div class="d-flex justify-content-end mt-3">
+                                                                <button class="btn bg-main text-white px-4"
+                                                                    type="button" data-bs-toggle="modal"
+                                                                    data-bs-target="#changePassword">Edit</button>
+                                                            </div>
+
+                                                            <!-- change password Modal -->
+                                                            <div class="modal fade" id="changePassword" tabindex="-1"
+                                                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                                <div class="modal-dialog">
+                                                                    <div class="modal-content">
+                                                                        <button type="button"
+                                                                            class="btn-close ms-auto p-3"
+                                                                            data-bs-dismiss="modal"
+                                                                            aria-label="Close"></button>
+                                                                        <div class="modal-body pt-0 p-3 pb-5">
+                                                                            <h4> Change Password</h4>
+                                                                            <p>please enter your current email and then
+                                                                                new
+                                                                                password and retype to make it new
+                                                                                password</p>
+                                                                            <div class="form-floating mb-3">
+                                                                                <input type="password"
+                                                                                    class="form-control"
+                                                                                    id="floatingInput"
+                                                                                    placeholder="Email">
+                                                                                <label for="floatingInput">Current
+                                                                                    password</label>
+                                                                            </div>
+                                                                            <div class="form-floating mb-3">
+                                                                                <input type="password"
+                                                                                    class="form-control"
+                                                                                    id="floatingInput"
+                                                                                    placeholder="Email">
+                                                                                <label for="floatingInput">New
+                                                                                    password</label>
+                                                                            </div>
+                                                                            <div class="form-floating mb-3">
+                                                                                <input type="password"
+                                                                                    class="form-control"
+                                                                                    id="floatingInput"
+                                                                                    placeholder="Email">
+                                                                                <label for="floatingInput">Retype New
+                                                                                    password</label>
+                                                                            </div>
+
+                                                                            <button
+                                                                                class="btn main-bg text-white px-5 mt-3 d-block mx-auto">
+                                                                                Changes</button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+
+
+                                                    <div class="form-check form-switch mt-3 border-primary">
+                                                        <input class="form-check-input" type="checkbox" role="switch"
+                                                            id="flexSwitchCheckDefault">
+                                                        <label class="form-check-label" for="flexSwitchCheckDefault">I'd
+                                                            like to receive promotional emails.</label>
+                                                    </div>
+
+                                                    <button class="btn main-bg text-white px-5 mt-3">Save
+                                                        Changes</button>
+
+                                                    <div class="my-4">
+                                                        <div class="fw-semibold fs-5">Delete Account</div>
+                                                        <p class="my-2">You can delete your account permanently. *Note
+                                                            that
+                                                            this
+                                                            process can take a while and can't be undone after
+                                                            completion.
+                                                        </p>
+                                                        <button class="btn btn-danger px-4 mt-3">Delete
+                                                            Account</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="bg-gradient pt-5">
+        <div class="container py-5 px-lg-2 px-md-2 px-4">
+            <div class="row justify-content-center">
+                <div class="col-lg-3 col-md-9 mb-lg-0 mb-4">
+                    <div class="my-4 text-center"><a href="Home.html">
+                            <img src="accets/images/footer-logo.png" width="70%" alt=""></a>
+                    </div>
+                    <div class="text-center">
+                        <i class="fa-brands fs-4 p-2 rounded-circle border fa-facebook"></i>
+                        <i class="fa-brands fs-4 p-2 rounded-circle border fa-square-instagram"></i>
+                        <i class="fa-brands fs-4 p-2 rounded-circle border fa-square-twitter"></i>
+                    </div>
+
+                </div>
+                <div class="col-lg-3 col-md-4 mb-lg-0 mb-4">
+                    <div class="fw-bold fs-5 mb-3">Service Features</div>
+                    <ul class="list-unstyled">
+                        <li class="my-2 fw-normal"><a href="#"><i class="fa-solid fa-angle-right text-main me-2"></i>
+                                Service Plans</a></li>
+                        <li class="my-2 fw-normal"><a href="Coverage.html"><i
+                                    class="fa-solid fa-angle-right text-main me-2"></i>
+                                5G Coverage</a></li>
+                        <li class="my-2 fw-normal"><a href="Bring-your-own-phine.html"><i
+                                    class="fa-solid fa-angle-right text-main me-2"></i>
+                                Bring Your Own Phone</a></li>
+                        <li class="my-2 fw-normal"><a href="Wifi-calling.html"><i
+                                    class="fa-solid fa-angle-right text-main me-2"></i>
+                                Wi-Fi Calling</a></li>
+                        <li class="my-2 fw-normal"><a href="Mobile-Hotspot.html"><i
+                                    class="fa-solid fa-angle-right text-main me-2"></i>
+                                Mobile Hotspot</a></li>
+
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4 mb-lg-0 mb-4">
+                    <div class="fw-bold fs-5 mb-3">About Light Mobile</div>
+
+                    <ul class="list-unstyled">
+                        <li class="my-2 fw-normal"><a href="Who-we-are.html"><i
+                                    class="fa-solid fa-angle-right text-main me-2"></i>
+                                Who We Are</a></li>
+                        <li class="my-2 fw-normal"><a href="Blogs.html"><i
+                                    class="fa-solid fa-angle-right text-main me-2"></i>
+                                Blogs</a></li>
+                        <li class="my-2 fw-normal"><a href="FAQ.html"><i
+                                    class="fa-solid fa-angle-right text-main me-2"></i>
+                                FAQ</a></li>
+
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4 mb-lg-0">
+                    <div class="fw-bold fs-5 mb-3">Support</div>
+                    <ul class="list-unstyled">
+                        <li class="my-2 fw-normal"><a href="#"><i class="fa-solid fa-angle-right text-main me-2"></i>
+                                The Help Center</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="bg-black">
+            <div class="py-2 container border-top border-dark text-white">
+                <div class="row gap-lg-0 gap-md-0 gap-3">
+                    <div class="col-lg-6 text-center">
+                        2024 Light Mobile. All rights are reserved.
+                    </div>
+                    <div class="col-lg-6">
+                        <ul
+                            class="d-lg-flex d-md-flex m-0 text-lg-start text-md-start justify-content-center text-center gap-3 list-unstyled">
+                            <li><a href="Privacy-Policy.html">Privacy Policy</a></li>
+                            <li><a href="Acceptable.html">Acceptable Use Policy</a></li>
+                            <li>911/e911 disclosure</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="accets/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="accets/bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@25.2.0/build/js/intlTelInput.min.js"></script>
+    <script>
+        const input = document.querySelector("#phone");
+        window.intlTelInput(input, {
+            loadUtils: () => import("https://cdn.jsdelivr.net/npm/intl-tel-input@25.2.0/build/js/utils.js"),
+        });
+    </script>
+
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

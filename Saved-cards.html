@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="accets/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="accets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@25.2.0/build/css/intlTelInput.css">
+    <title>Home</title>
+</head>
+
+<style>
+    .iti--inline-dropdown {
+        width: 100% !important;
+    }
+</style>
+
+<body>
+    <div class="mask"></div>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container bg-white p-2 mx-lg-auto mx-md-auto mx-2 rounded-pill">
+            <div class="d-flex justify-content-between border rounded-pill px-4 w-100">
+                <a class=" mx-0 my-2" href="Home.html"><img src="accets/images/Light-mobile-logo.png" width="80%"
+                        alt=""></a>
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars-staggered"></i>
+                </button>
+                <div class="collapse navbar-collapse d-block" id="navbarSupportedContent">
+                    <i class="d-lg-none fa-solid fa-circle-right text-main fs-2 nav-close"></i>
+                    <ul class="navbar-nav mx-auto align-items-lg-center gap-lg-2 gap-xl-4">
+
+                        <li class="nav-item">
+                            <a class="nav-link fw-medium text-main" aria-current="page" href="Home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-medium text-black" aria-current="page"
+                                href="Priceing.html">Pricing</a>
+                        </li>
+                        <div class="dropdown">
+                            <a class="dropdown-toggle fw-medium" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Services
+                            </a>
+
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                        <li class="nav-item">
+                            <a class="nav-link fw-medium text-black" aria-current="page"
+                                href="Coverage.html">Coverage</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-medium text-black" aria-current="page"
+                                href="Contact-us.html">Contact</a>
+                        </li>
+
+                    </ul>
+                    <div class="d-lg-flex gap-2 ">
+                        <button class="btn bg-main btn-sm text-white px-3" type="submit">Login Now</button>
+                        <button class="btn bg-main btn-sm text-white px-3" type="submit">Register Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <section>
+        <div class="container mt-4 mb-5">
+            <div class="row flex-lg-row flex-column flex-sm-nowrap justify-content-center justify-content-sm-between">
+                <div class="col-xl-3 d-xl-block d-none">
+                    <div class="rounded-3 profile-bg shadow pe-0 p-2">
+                        <!-- Tabs Start -->
+                        <div class="container tabs rounded-3 pe-0">
+
+                            <div class="d-flex align-items-center my-4">
+                                <label for="edit-img" class="d-flex align-items-center gap-3">
+                                    <img class="rounded-circle pointer edit-image"
+                                        src="https://i.pinimg.com/736x/8b/16/7a/8b167af653c2399dd93b952a48740620.jpg"
+                                        width="30%" alt="">
+                                    <div>
+
+                                        <div class="fs-5 fw-semibold text-nowrap">Iron Men</div>
+                                        <div class="fs-small">Traveler</div>
+                                    </div>
+                                    <input class="d-none" type="file" name="" id="edit-img">
+                                </label>
+                            </div>
+
+                            <ul class="tab-list d-grid p-0">
+                                <li
+                                    class="text-black pointer rounded-3 mb-2 py-3 px-3 list-group-item fw-semibold py-1 my-1">
+                                    <i class="fa-regular fa-address-card me-2"></i><a href="My-Account.html">Account
+                                        Inforation</a>
+                                </li>
+                                <li
+                                    class="text-white pointer rounded-start-3 mb-2 py-3 px-3 bg-main list-group-item fs-6 py-1 my-1 fw-semibold">
+                                    <i class="fa-regular fa-credit-card me-2"></i><a href="Saved-Cards.html">Saved
+                                        Cards</a>
+                                </li>
+                                <li
+                                    class="fs-6 text-black pointer rounded-3 mb-2 py-3 px-3 list-group-item fw-semibold py-1 my-1">
+                                    <i class="fa-regular fa-money-bill-1 me-2"></i><a href="Orders.html">Orders</a>
+                                </li>
+                                <li
+                                    class="text-black pointer rounded-3 mb-2 py-3 px-3 list-group-item fw-semibold py-1 my-1">
+                                    <i class="fa-regular fa-money-bill-1 me-2"></i><a href="wallet.html">Wallet</a>
+                                </li>
+                                <li
+                                    class="fs-6 text-danger pointer rounded-3 mb-2 py-3 px-3 list-group-item fw-semibold py-1 my-1">
+                                    <i class="fa-solid fa-arrow-right-from-bracket me-2"></i>Logout
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Tabs End -->
+                    </div>
+                </div>
+                <div class="col-xl-9 rounded-3">
+                    <div class="fs-4 fw-bold mb-lg-3 mb-md-3 mb-5">
+                        <a href="main-profile.html">
+                            <i class="d-xl-none d-inline fa-solid fa-chevron-left me-3"></i>
+                        </a>
+                        Your Wallet
+                    </div>
+                    <section class="px-lg-4">
+                        <div class="row">
+                            <div class="tabs-content my-0" id="content-select-2">
+
+                                <div class="fs-4 fw-bold mt-lg-4 mb-3" id="two"><a href="main-profile.html">
+                                        <i class="d-xl-none d-inline fa-solid fa-chevron-left me-3"></i>
+                                    </a> Saved Cards</div>
+
+                                <div class="my-5">
+                                    <img class="d-block m-auto col-lg-6 col-md-8" src="accets/Images/image 14623423.png"
+                                        width="100%" alt="">
+                                    <div class="mt-4 d-flex justify-content-center gap-3">
+                                        <button class="btn bg-main py-2 text-white">Update Card</button>
+                                        <button class="btn py-2 text-white bg-danger">Delete Card</button>
+                                    </div>
+                                </div>
+
+
+                                <div class="fw-semibold fs-5">You don’t have any saved cards yet.</div>
+                                <p class="my-2">When you add a new card, you’ll see your saved card details
+                                    here.
+                                </p>
+
+                                <button class="btn bg-main text-white px-5 mt-2" data-bs-toggle="modal"
+                                    data-bs-target="#addCard">Add New Card</button>
+                       
+                       
+                                    <!-- Modal -->
+                                <div class="modal fade" id="addCard" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title
+                                                </h1>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body ">
+                                                <div class="select-cards" style="display: none;">
+                                                    <div class="fs-5 fw-bold">Payment Methods</div>
+                                                    <div class="text-secondary">Please select your payment
+                                                        method
+                                                        down below.
+                                                    </div>
+
+
+                                                    <div
+                                                        class="shadow bg-light d-flex pointer justify-content-between align-items-center Credit-card py-4 px-3 mt-4">
+                                                        <div class="d-flex align-items-center gap-3">
+                                                            <i class="fa-regular fa-credit-card fs-3"></i>
+                                                            <div class="">
+                                                                <div class="lh-1 fw-semibold"> Credit / Debit
+                                                                    Card
+                                                                </div>
+                                                                <div class="lh-1">Visa, Mastercard, AMEX, CUP,
+                                                                    JCB
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <i class="fa-solid fa-angle-right"></i>
+                                                    </div>
+
+                                                    <div
+                                                        class="shadow bg-light d-flex justify-content-between align-items-center py-4 px-3 mt-4">
+                                                        <div class="fw-semibold">
+                                                            <img src="accets/Images/paypal.svg" alt="">
+                                                            Paypal
+                                                        </div>
+                                                        <button class="btn btn-outline-dark px-4">Select</button>
+                                                    </div>
+
+                                                    <div
+                                                        class="shadow bg-light d-flex justify-content-between align-items-center py-4 px-3 mt-4">
+                                                        <div class="fw-semibold">
+                                                            <img src="accets/Images/alipay.svg" alt="">
+                                                            Alipay
+                                                        </div>
+                                                        <button class="btn btn-outline-dark px-4">Select</button>
+                                                    </div>
+                                                    <br>
+                                                    <br>
+                                                    <br>
+                                                </div>
+
+                                                <div class="cards-details" style="display: block;">
+
+                                                    <div class="fs-5 mb-3 fw-bold pointer"><i
+                                                            class="fa-solid fa-angle-left card-back"></i>
+                                                        &nbsp;&nbsp; Add New Card</div>
+
+                                                    <input type="text" class="form-control py-2 mb-3"
+                                                        placeholder="Card Name">
+                                                    <img class="my-3" width="340vw" src="accets/Images/cards.png"
+                                                        alt="">
+
+                                                    <input type="text" class="form-control py-2 mb-3"
+                                                        placeholder="Card Number">
+                                                    <input type="text" class="form-control py-2 mb-3"
+                                                        placeholder="Name on card">
+
+                                                    <div class="row">
+                                                        <div class="col-lg">
+                                                            <input type="date" class="form-control py-2 mb-3"
+                                                                placeholder="Expiry Date">
+                                                        </div>
+                                                        <div class="col-lg">
+                                                            <input type="text" class="form-control py-2 mb-3"
+                                                                placeholder="CVV">
+                                                        </div>
+                                                    </div>
+
+
+                                                    <div class="fs-5 my-2 fw-semibold">Learn More About Security
+                                                    </div>
+                                                    <div>Stripe has been audited by a PCI-certified auditor and
+                                                        is
+                                                        certified to
+                                                        PCI
+                                                        Service Provider Level 1. This is the most stringent
+                                                        level
+                                                        of
+                                                        certification
+                                                        available in the payments industry. <a
+                                                            class="text-decoration-underline" href="">Learn
+                                                            More</a>
+                                                    </div>
+
+                                                    <button
+                                                        class="btn-dark btn px-4 d-block m-auto w-75 mt-3">ADD</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="bg-gradient pt-5">
+        <div class="container py-5 px-lg-2 px-md-2 px-4">
+            <div class="row justify-content-center">
+                <div class="col-lg-3 col-md-9 mb-lg-0 mb-4">
+                    <div class="my-4 text-center"><a href="Home.html">
+                            <img src="accets/images/footer-logo.png" width="70%" alt=""></a>
+                    </div>
+                    <div class="text-center">
+                        <i class="fa-brands fs-4 p-2 rounded-circle border fa-facebook"></i>
+                        <i class="fa-brands fs-4 p-2 rounded-circle border fa-square-instagram"></i>
+                        <i class="fa-brands fs-4 p-2 rounded-circle border fa-square-twitter"></i>
+                    </div>
+
+                </div>
+                <div class="col-lg-3 col-md-4 mb-lg-0 mb-4">
+                    <div class="fw-bold fs-5 mb-3">Service Features</div>
+                    <ul class="list-unstyled">
+                        <li class="my-2 fw-normal"><a href="#"><i class="fa-solid fa-angle-right text-main me-2"></i>
+                                Service Plans</a></li>
+                        <li class="my-2 fw-normal"><a href="Coverage.html"><i
+                                    class="fa-solid fa-angle-right text-main me-2"></i>
+                                5G Coverage</a></li>
+                        <li class="my-2 fw-normal"><a href="Bring-your-own-phine.html"><i
+                                    class="fa-solid fa-angle-right text-main me-2"></i>
+                                Bring Your Own Phone</a></li>
+                        <li class="my-2 fw-normal"><a href="Wifi-calling.html"><i
+                                    class="fa-solid fa-angle-right text-main me-2"></i>
+                                Wi-Fi Calling</a></li>
+                        <li class="my-2 fw-normal"><a href="Mobile-Hotspot.html"><i
+                                    class="fa-solid fa-angle-right text-main me-2"></i>
+                                Mobile Hotspot</a></li>
+
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4 mb-lg-0 mb-4">
+                    <div class="fw-bold fs-5 mb-3">About Light Mobile</div>
+
+                    <ul class="list-unstyled">
+                        <li class="my-2 fw-normal"><a href="Who-we-are.html"><i
+                                    class="fa-solid fa-angle-right text-main me-2"></i>
+                                Who We Are</a></li>
+                        <li class="my-2 fw-normal"><a href="Blogs.html"><i
+                                    class="fa-solid fa-angle-right text-main me-2"></i>
+                                Blogs</a></li>
+                        <li class="my-2 fw-normal"><a href="FAQ.html"><i
+                                    class="fa-solid fa-angle-right text-main me-2"></i>
+                                FAQ</a></li>
+
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4 mb-lg-0">
+                    <div class="fw-bold fs-5 mb-3">Support</div>
+                    <ul class="list-unstyled">
+                        <li class="my-2 fw-normal"><a href="#"><i class="fa-solid fa-angle-right text-main me-2"></i>
+                                The Help Center</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="bg-black">
+            <div class="py-2 container border-top border-dark text-white">
+                <div class="row gap-lg-0 gap-md-0 gap-3">
+                    <div class="col-lg-6 text-center">
+                        2024 Light Mobile. All rights are reserved.
+                    </div>
+                    <div class="col-lg-6">
+                        <ul
+                            class="d-lg-flex d-md-flex m-0 text-lg-start text-md-start justify-content-center text-center gap-3 list-unstyled">
+                            <li><a href="Privacy-Policy.html">Privacy Policy</a></li>
+                            <li><a href="Acceptable.html">Acceptable Use Policy</a></li>
+                            <li>911/e911 disclosure</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="accets/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="accets/bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

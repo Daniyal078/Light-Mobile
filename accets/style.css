@@ -23,7 +23,7 @@ body {
     background-color: #000;
 }
 
-.pointer{
+.pointer {
     cursor: pointer;
 }
 
@@ -129,16 +129,42 @@ body {
 
 .Sign-up {
     z-index: 1;
-
 }
 
+.sticky {
+    position: sticky;
+    top: 0;
+    align-self: top;
+}
+
+.fw-xbold {
+    font-weight: 900;
+}
+
+
+.edit-icon {
+    display: none !important;
+}
+
+.edit-img-main:hover .edit-icon {
+    display: block !important;
+}
+
+.edit-img-main:hover .edit-image {
+    filter: brightness(0.5);
+}
+
+.edit-image {
+    transition: 0.5s;
+}
 
 @media screen and (max-width:1024px) {
     .responsive-image {
         width: 70%;
     }
 }
-@media screen and (max-width:991px) {
+
+@media screen and (max-width:992px) {
     .navbar-collapse {
         position: fixed;
         top: 0;
@@ -232,8 +258,13 @@ body {
         gap: 12rem !important;
     }
 
-    .position-sticky {
-        position: relative !important;
+
+    .font-sm {
+        font-size: small;
     }
+
+    /* .position-sticky {
+        position: relative !important;
+    } */
 
 }
