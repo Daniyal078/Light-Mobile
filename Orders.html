@@ -18,12 +18,14 @@
     .iti--inline-dropdown {
         width: 100% !important;
     }
+
+    
 </style>
 
 <body>
     <div class="mask"></div>
 
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg justify-content-center">
         <div class="container bg-white p-2 mx-lg-auto mx-md-auto mx-2 rounded-pill">
             <div class="d-flex justify-content-between border rounded-pill px-4 w-100">
                 <a class=" mx-0 my-2" href="Home.html"><img src="accets/images/Light-mobile-logo.png" width="80%"
@@ -38,11 +40,11 @@
                     <ul class="navbar-nav mx-auto align-items-lg-center gap-lg-2 gap-xl-4">
 
                         <li class="nav-item">
-                            <a class="nav-link fw-medium text-main" aria-current="page" href="Home.html">Home</a>
+                            <a class="nav-link fw-medium text-black" aria-current="page" href="Home.html">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link fw-medium text-black" aria-current="page"
-                                href="Priceing.html">Pricing</a>
+                                href="Pricing.html">Pricing</a>
                         </li>
                         <div class="dropdown">
                             <a class="dropdown-toggle fw-medium" href="#" role="button" data-bs-toggle="dropdown"
@@ -50,10 +52,10 @@
                                 Services
                             </a>
 
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <ul class="dropdown-menu p-0">
+                                <!-- <li><a class="dropdown-item py-3" href="Coverage.html">5G Coverage</a></li> -->
+                                <li><a class="dropdown-item py-3" href="Bring-your-own-phine.html">Bring your own
+                                        phine</a></li>
                             </ul>
                         </div>
                         <li class="nav-item">
@@ -66,9 +68,13 @@
                         </li>
 
                     </ul>
-                    <div class="d-lg-flex gap-2 ">
-                        <button class="btn bg-main btn-sm text-white px-3" type="submit">Login Now</button>
-                        <button class="btn bg-main btn-sm text-white px-3" type="submit">Register Now</button>
+                    <div class="d-lg-flex gap-2 mt-md-0 mt-2">
+                        <a href="Login.html">
+                            <button class="btn bg-main btn-sm text-white px-3" type="submit">Login Now</button>
+                        </a>
+                        <a href="Register.html">
+                            <button class="btn bg-main btn-sm text-white px-3" type="submit">Register Now</button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -82,44 +88,54 @@
                 <div class="col-xl-3 d-xl-block d-none">
                     <div class="rounded-3 profile-bg shadow pe-0 p-2">
                         <!-- Tabs Start -->
-                        <div class="container tabs rounded-3 pe-0">
-
+                        <div class="container tabs rounded-3 ">
                             <div class="d-flex align-items-center my-4">
-                                <label for="edit-img" class="d-flex align-items-center gap-3">
-                                    <img class="rounded-circle pointer edit-image"
-                                        src="https://i.pinimg.com/736x/8b/16/7a/8b167af653c2399dd93b952a48740620.jpg"
-                                        width="30%" alt="">
-                                    <div>
+                                <label for="edit-img" class=" gap-3 position-relative edit-img-main">
+                                    <div class="position-relative">
+                                        <img class="rounded-circle d-block mx-auto pointer edit-image"
+                                            src="https://i.pinimg.com/736x/8b/16/7a/8b167af653c2399dd93b952a48740620.jpg"
+                                            width="30%" alt="">
+                                        <i class="fa-solid fa-user-pen position-absolute top-50 start-50 translate-middle text-white fs-4 edit-icon"
+                                            style=""></i>
+                                    </div>
 
-                                        <div class="fs-5 fw-semibold text-nowrap">Iron Men</div>
-                                        <div class="fs-small">Traveler</div>
+                                    <div>
+                                        <div class="fs-5 text-center fw-semibold text-nowrap">Iron Men</div>
+                                        <div class="fs-small text-center">Traveler</div>
                                     </div>
                                     <input class="d-none" type="file" name="" id="edit-img">
                                 </label>
                             </div>
-
                             <ul class="tab-list d-grid p-0">
                                 <li
-                                    class="text-black pointer rounded-3 mb-2 py-3 px-3 list-group-item fw-semibold py-1 my-1">
-                                    <i class="fa-regular fa-address-card me-2"></i><a href="My-Account.html">Account
+                                    class="text-black pointer rounded-3 mb-2 py-2 px-2 list-group-item fs-6 my-1 fw-semibold">
+                                    <i
+                                        class="fa-regular fa-money-bill-1 me-3 bg-main text-white p-2 rounded-circle"></i><a
+                                        href="My-Account.html">Account
                                         Inforation</a>
                                 </li>
                                 <li
-                                    class="text-black pointer rounded-3 mb-2 py-3 px-3 list-group-item fw-semibold py-1 my-1">
-                                    <i class="fa-regular fa-credit-card me-2"></i><a href="Saved-Cards.html">Saved
-                                        Cards</a>
+                                    class="text-black pointer rounded-3 mb-2 py-2 px-2 list-group-item fs-6 my-1 fw-semibold">
+                                    <i
+                                        class="fa-regular fa-money-bill-1 me-3 bg-main text-white p-2 rounded-circle"></i><a
+                                        href="invoice.html">Invoice</a>
                                 </li>
                                 <li
-                                    class="text-white pointer rounded-start-3 mb-2 py-3 px-3 bg-main list-group-item fs-6 py-1 my-1 fw-semibold">
-                                    <i class="fa-regular fa-money-bill-1 me-2"></i><a href="Orders.html">Orders</a>
+                                    class="text-white pointer rounded-3 mb-2 py-2 px-2 bg-main list-group-item fs-6 py-1 my-1 fw-semibold">
+                                    <i
+                                        class="fa-regular fa-credit-card me-3 bg-white text-main p-2 rounded-circle"></i><a
+                                        href="Orders.html">Orders</a>
                                 </li>
                                 <li
-                                    class="fs-6 text-black pointer rounded-3 mb-2 py-3 px-3 list-group-item fw-semibold py-1 my-1">
-                                    <i class="fa-regular fa-money-bill-1 me-2"></i><a href="wallet.html">Wallet</a>
+                                    class="fs-6 text-black pointer rounded-3 mb-2 py-3 px-2 list-group-item fw-semibold my-1">
+                                    <i
+                                        class="fa-regular fa-money-bill-1 me-3 bg-main text-white p-2 rounded-circle"></i><a
+                                        href="wallet.html">Wallet</a>
                                 </li>
                                 <li
-                                    class="fs-6 text-danger pointer rounded-3 mb-2 py-3 px-3 list-group-item fw-semibold py-1 my-1">
-                                    <i class="fa-solid fa-arrow-right-from-bracket me-2"></i>Logout
+                                    class="fs-6 text-danger pointer rounded-3 mb-2 py-3 px-2 list-group-item fw-semibold my-1">
+                                    <i
+                                        class="fa-solid fa-arrow-right-from-bracket me-3 bg-main text-white p-2 rounded-circle"></i>Logout
                                 </li>
                             </ul>
                         </div>
@@ -199,7 +215,7 @@
                                         </a>
                                     </td>
                                 </tr>
-                                
+
                             </tbody>
                         </table>
                     </section>

@@ -10,12 +10,14 @@
         integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@25.2.0/build/css/intlTelInput.css">
     <title>Home</title>
 </head>
 
-
 <style>
-
+    .iti--inline-dropdown {
+        width: 100% !important;
+    }
 </style>
 
 <body>
@@ -78,70 +80,117 @@
     </nav>
 
 
-    <section class="py-5">
-        <div class="container px-lg-auto px-md-auto px-4">
-            <div class="fs-2 fw-medium">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </div>
+    <section>
+        <div class="container mt-4 mb-5">
+            <div class="row flex-lg-row flex-column flex-sm-nowrap justify-content-center justify-content-sm-between">
+                <div class="col-xl-3 d-xl-block d-none">
+                    <div class="rounded-3 profile-bg shadow pe-0 p-2">
+                        <!-- Tabs Start -->
+                        <div class="container tabs rounded-3 ">
+                            <div class="d-flex align-items-center my-4">
+                                <label for="edit-img"
+                                    class=" gap-3 position-relative edit-img-main">
+                                    <div class="position-relative">
+                                        <img class="rounded-circle d-block mx-auto pointer edit-image"
+                                            src="https://i.pinimg.com/736x/8b/16/7a/8b167af653c2399dd93b952a48740620.jpg"
+                                            width="30%" alt="">
+                                        <i class="fa-solid fa-user-pen position-absolute top-50 start-50 translate-middle text-white fs-4 edit-icon"
+                                            style=""></i>
+                                    </div>
 
-            <div class="d-flex justify-content-between align-items-center">
-                <div class="d-flex align-items-center gap-2">
-                    <img src="accets/images/black1.png.png" width="25%" alt="">
-                    <div>
-                        <div class="fw-semibold text-muted">John Deo</div>
-                        <div class="text-black-50">22 August 2024</div>
+                                    <div>
+                                        <div class="fs-5 text-center fw-semibold text-nowrap">Iron Men</div>
+                                        <div class="fs-small text-center">Traveler</div>
+                                    </div>
+                                    <input class="d-none" type="file" name="" id="edit-img">
+                                </label>
+                            </div>
+                            <ul class="tab-list d-grid p-0">
+                                <li
+                                    class="text-black pointer rounded-3 py-3 px-2 list-group-item fs-6 fw-semibold">
+                                    <i
+                                        class="fa-regular fa-money-bill-1 me-3 bg-main text-white p-2 rounded-circle"></i><a
+                                        href="My-Account.html">Account
+                                        Inforation</a>
+                                </li>
+                                <li
+                                    class="text-white pointer rounded-3 py-2 px-2 bg-main list-group-item fs-6 py-1 fw-semibold">
+                                    <i
+                                        class="fa-regular fa-credit-card me-3 bg-white text-main p-2 rounded-circle"></i><a
+                                        href="invoice.html">Invoice</a>
+                                </li>
+                                <li
+                                    class="fs-6 text-black pointer rounded-3 py-3 px-2 list-group-item fw-semibold">
+                                    <i
+                                        class="fa-regular fa-money-bill-1 me-3 bg-main text-white p-2 rounded-circle"></i><a
+                                        href="Orders.html">Orders</a>
+                                </li>
+                                <li
+                                    class="fs-6 text-black pointer rounded-3 py-3 px-2 list-group-item fw-semibold">
+                                    <i
+                                        class="fa-regular fa-money-bill-1 me-3 bg-main text-white p-2 rounded-circle"></i><a
+                                        href="wallet.html">Wallet</a>
+                                </li>
+                                <li
+                                    class="fs-6 text-danger pointer rounded-3 py-3 px-2 list-group-item fw-semibold">
+                                    <i
+                                        class="fa-solid fa-arrow-right-from-bracket me-3 bg-main text-white p-2 rounded-circle"></i>Logout
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Tabs End -->
                     </div>
                 </div>
-
-                <div class="d-flex gap-2 text-black-50 my-5">
-                    <i class="fs-3 rounded-circle fa-brands fa-square-facebook"></i>
-                    <i class="fs-3 rounded-circle fa-brands fa-square-twitter"></i>
-                    <i class="fs-3 rounded-circle fa-solid fa-square-share-nodes"></i>
+                <div class="col-xl-9 rounded-3">
+                    <div class="fs-4 fw-bold mb-lg-3 mb-md-3 mb-5">
+                        <a href="main-profile.html">
+                            <i class="d-xl-none d-inline fa-solid fa-chevron-left me-3"></i>
+                        </a>
+                        Invoice
+                    </div>
+                    <section class="">
+                        <table class="table align-middle">
+                            <thead class="table-warning">
+                                <tr>
+                                    <th scope="col">Invoice No</th>
+                                    <th scope="col">Date/Time</th>
+                                    <th scope="col">Amount</th>
+                                    <th scope="col">Status</th>
+                                    <th scope="col">Added By</th>
+                                    <th scope="col">Download</th>
+                                    <th scope="col">Type</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th class="py-4" scope="row">3DFF2C98-DRAFT</th>
+                                    <td>8/22/2024 / 5:35AM</td>
+                                    <td>$36.87 USD</td>
+                                    <td class="text-success">Pending</td>
+                                    <td>Ashir Ali</td>
+                                    <td class="text-center"><i class="fa-solid fa-download"></i></td>
+                                    <td>Wallet</td>
+                                </tr>
+                                <tr>
+                                    <th class="py-4" scope="row">3DFF2C98-DRAFT</th>
+                                    <td>8/22/2024 / 5:35AM</td>
+                                    <td>$36.87 USD</td>
+                                    <td class="text-success">Pending</td>
+                                    <td>Ashir Ali</td>
+                                    <td class="text-center"><i class="fa-solid fa-download"></i></td>
+                                    <td>Wallet</td>
+                                </tr>
+                                
+                            </tbody>
+                        </table>
+                    </section>
                 </div>
             </div>
-
-            <img src="https://g.foolcdn.com/editorial/images/578333/gettyimages-1092303536.jpg" width="100%" alt="">
-
-
-            <p class="my-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas ratione ipsam iure
-                tempora mollitia
-                maxime ad incidunt quo. Commodi, nesciunt.
-            </p>
-            <p class="my-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, nisi repudiandae
-                pariatur reiciendis molestias distinctio molestiae necessitatibus debitis exercitationem dignissimos,
-                atque, nemo aspernatur? Distinctio at pariatur eveniet, blanditiis numquam possimus.
-            </p>
-
-            <p class="my-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas ratione ipsam iure
-                tempora mollitia
-                maxime ad incidunt quo. Commodi, nesciunt.
-            </p>
-
-            <div class="fs-3 fw-semibold">Heading</div>
-
-            <p class="my-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, nisi repudiandae
-                pariatur reiciendis molestias distinctio molestiae necessitatibus debitis exercitationem dignissimos,
-                atque, nemo aspernatur? Distinctio at pariatur eveniet, blanditiis numquam possimus.
-            </p>
-
-            <p class="my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit cupiditate, illum maxime
-                aperiam iste asperiores consequatur repudiandae officiis cum aliquid et alias aliquam! Velit nemo non
-                debitis porro, blanditiis quia exercitationem maxime vitae iure atque expedita quidem, perferendis, est
-                culpa. Eius explicabo atque dolorum omnis provident harum accusantium, quidem est.
-            </p>
-
-            <ul>
-                <li class="my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, totam!</li>
-                <li class="my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae eum ad perferendis ipsum
-                    corrupti numquam ipsam tempora sit nam?</li>
-                <li class="my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, totam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, totam!</li>
-                <li class="my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, totam!</li>
-            </ul>
-
-
         </div>
     </section>
 
-     <footer class="bg-gradient pt-5">
+
+    <footer class="bg-gradient pt-5">
         <div class="container py-5 px-lg-2 px-md-2 px-4">
             <div class="row justify-content-center">
                 <div class="col-lg-3 col-md-9 mb-lg-0 mb-4">
@@ -221,7 +270,7 @@
         </div>
     </footer>
 
-        <script src="accets/script.js"></script>
+    <script src="accets/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>

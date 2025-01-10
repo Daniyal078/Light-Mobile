@@ -75,6 +75,10 @@ body {
     background: linear-gradient(to bottom, #fde2ab, #fff, #fff, #fff, #fde2ab);
 }
 
+.fs-xs {
+    font-size: small;
+}
+
 
 .bg-blur {
     backdrop-filter: blur(30px);
@@ -158,7 +162,12 @@ body {
     transition: 0.5s;
 }
 
-@media screen and (max-width:1024px) {
+
+th, td{
+    text-wrap: nowrap;
+}
+
+@media screen and (min-width:1024px) {
     .responsive-image {
         width: 70%;
     }
@@ -200,6 +209,17 @@ body {
 
     .responsive-image {
         width: 70%;
+    }
+
+    .profile-sidenav {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        z-index: 2;
+        transition: ease 0.5s;
+        width: 250px;
+        height: 100vh;
+        background: #fff;
     }
 }
 

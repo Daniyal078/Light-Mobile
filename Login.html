@@ -28,9 +28,37 @@
                         <button
                             class="py-2 px-4 fw-medium btn bg-main shadow text-white border-0 rounded-1 my-3 text-uppercase">Customer</button>
                         <button
-                            class="py-2 px-4 fw-medium shadow hover-white btn text-black  border-0 rounded-1 my-3 text-uppercase"
-                            style="">Dealer</button>
+                            class="py-2 px-4 fw-medium shadow hover-white btn text-black  border-0 rounded-1 my-3 text-uppercase">Dealer</button>
                     </div>
+
+                    <!-- Dealer Modal -->
+                    <div class="modal fade" id="DealerLog" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header border-0">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body pt-0">
+                                    <img class="d-block mx-auto"
+                                        src="https://img.freepik.com/free-vector/login-concept-illustration_114360-4525.jpg"
+                                        width="30%" alt="">
+                                    <div class="text-center">
+                                        <div class="text-main fw-bold fs-2">Welcome Back Dealer!</div>
+                                        <div class="my-3">You are now logged in with access to your exclusive dealer
+                                            pricing. Explore
+                                            the latest deals and manage your order with your special rates applied.
+                                        </div>
+
+                                        <button
+                                            class="py-2 px-5 d-block mx-auto btn fw-medium bg-main text-white border-0 rounded-1 my-4 text-uppercase">Continue</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <form action="">
                         <label class=" fw-medium" for="">Email</label>
                         <input class="form-control my-2 py-2 border border-dark" type="email"
@@ -51,7 +79,8 @@
                     </div>
 
                     <button
-                        class="py-2 px-5 d-block mx-auto btn fw-medium bg-main text-white border-0 rounded-1 my-4 text-uppercase">Log
+                        class="py-2 px-5 d-block mx-auto btn fw-medium bg-main text-white border-0 rounded-1 my-4 text-uppercase"
+                        data-bs-toggle="modal" data-bs-target="#DealerLog">Log
                         in</button>
 
                     <div class="text-center my-3 font-sm">To register for a new Light mobile account, <a
