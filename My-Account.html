@@ -52,8 +52,7 @@
                             <a class="nav-link fw-medium text-black" aria-current="page" href="Home.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link fw-medium text-black" aria-current="page"
-                                href="Pricing.html">Pricing</a>
+                            <a class="nav-link fw-medium text-black" aria-current="page" href="Pricing.html">Pricing</a>
                         </li>
                         <div class="dropdown">
                             <a class="dropdown-toggle fw-medium" href="#" role="button" data-bs-toggle="dropdown"
@@ -150,6 +149,17 @@
                                         <i class="fa-solid fa-caret-right"></i>
                                     </li>
                                 </a>
+                                <a class="" id="paymenthis-tab" data-bs-toggle="tab" data-bs-target="#paymenthis"
+                                    type="button" role="tab" aria-controls="paymenthis" aria-selected="false">
+                                    <li
+                                        class="pointer d-flex align-items-center justify-content-between rounded py-2 px-2 list-group-item fs-6 my-1 py-1 fw-medium profile-sideClose">
+                                        <div>
+                                            <i class="fa-solid fa-clock-rotate-left p-2 rounded-circle"></i>
+                                            Payment History
+                                        </div>
+                                        <i class="fa-solid fa-caret-right"></i>
+                                    </li>
+                                </a>
                                 <a class="" id="wallet-tab" data-bs-toggle="tab" data-bs-target="#wallet" type="button"
                                     role="tab" aria-controls="wallet" aria-selected="false">
                                     <li
@@ -204,10 +214,13 @@
                                 <div class="row">
                                     <div class="tabs-content my-0 active" id="content-select-1">
                                         <div>
-                                            <div class="fs-4 fw-bold mb-lg-3 mb-md-3 mb-5 d-flex align-items-center justify-content-between"><i
-                                                    class="fa-solid fa-bars me-3 d-lg-none d-block profile-sidetog"></i>
-                                                Account
-                                                Information</div>
+                                            <div
+                                                class="fs-4 fw-bold mb-lg-3 mb-md-3 mb-5 d-flex align-items-center justify-content-between">
+                                                <!-- <i class="fa-solid fa-bars me-3 d-lg-none d-block profile-sidetog"></i> -->
+                                                <i class="fa-regular fa-user d-lg-none d-block profile-sidetog"></i>
+                                                Account Information
+                                                <div></div>
+                                            </div>
                                             <div class="row">
                                                 <div class="col-lg-6 mt-3">
                                                     <div class="bg-light p-3 rounded-3">
@@ -225,7 +238,8 @@
                                                         aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                         <div class="modal-dialog">
                                                             <div class="modal-content">
-                                                                <button type="button" class="btn-close ms-auto pt-4 pe-4"
+                                                                <button type="button"
+                                                                    class="btn-close ms-auto pt-4 pe-4"
                                                                     data-bs-dismiss="modal" aria-label="Close"></button>
                                                                 <div class="modal-body pt-0 p-3 pb-4">
                                                                     <h5>Change Name</h5>
@@ -239,12 +253,12 @@
                                                                             id="floatingInput" placeholder="">
                                                                         <label for="floatingInput">Last Name</label>
                                                                     </div>
-                                                                    <div class="form-floating mb-3">
+                                                                    <!-- <div class="form-floating mb-3">
                                                                         <input type="password" class="form-control"
                                                                             id="floatingInput" placeholder="">
                                                                         <label for="floatingInput">Current
                                                                             password</label>
-                                                                    </div>
+                                                                    </div> -->
 
                                                                     <button
                                                                         class="btn bg-main text-white px-5 mt-3 d-block mx-auto">
@@ -274,7 +288,8 @@
                                                         aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                         <div class="modal-dialog">
                                                             <div class="modal-content">
-                                                                <button type="button" class="btn-close ms-auto pt-4 pe-4"
+                                                                <button type="button"
+                                                                    class="btn-close ms-auto pt-4 pe-4"
                                                                     data-bs-dismiss="modal" aria-label="Close"></button>
                                                                 <div class="modal-body pt-0 p-3 pb-4">
                                                                     <h4> Change Address</h4>
@@ -411,7 +426,8 @@
                                                         aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                         <div class="modal-dialog">
                                                             <div class="modal-content">
-                                                                <button type="button" class="btn-close ms-auto pt-4 pe-4"
+                                                                <button type="button"
+                                                                    class="btn-close ms-auto pt-4 pe-4"
                                                                     data-bs-dismiss="modal" aria-label="Close"></button>
                                                                 <div class="modal-body pt-0 p-3 pb-4">
                                                                     <h4> Change Email</h4>
@@ -430,12 +446,12 @@
                                                                         <label for="floatingInput">New
                                                                             Email</label>
                                                                     </div>
-                                                                    <div class="form-floating mb-3">
+                                                                    <!-- <div class="form-floating mb-3">
                                                                         <input type="password" class="form-control"
                                                                             id="floatingInput" placeholder="Email">
                                                                         <label for="floatingInput">Current
                                                                             password</label>
-                                                                    </div>
+                                                                    </div> -->
 
                                                                     <button
                                                                         class="btn bg-main text-white px-5 mt-3 d-block mx-auto">
@@ -462,7 +478,8 @@
                                                         aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                         <div class="modal-dialog">
                                                             <div class="modal-content">
-                                                                <button type="button" class="btn-close ms-auto pt-4 pe-4"
+                                                                <button type="button"
+                                                                    class="btn-close ms-auto pt-4 pe-4"
                                                                     data-bs-dismiss="modal" aria-label="Close"></button>
                                                                 <div class="modal-body pt-0 p-3 pb-4">
                                                                     <h5> Change Password</h5>
@@ -557,9 +574,14 @@
                         </div>
                         <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                             <section class="">
-                                <div class="fs-4 fw-bold mb-lg-3 mb-md-3 mb-5 d-flex align-items-center justify-content-between"><i
-                                        class="fa-solid fa-bars me-3 d-lg-none d-block profile-sidetog"></i> Invoice
+                                <div
+                                    class="fs-4 fw-bold mb-lg-3 mb-md-3 mb-5 d-flex align-items-center justify-content-between">
+                                    <!-- <i class="fa-solid fa-bars me-3 d-lg-none d-block profile-sidetog"></i> -->
+                                    <i class="fa-regular fa-user d-lg-none d-block profile-sidetog"></i>
+                                    Invoice
+                                    <div></div>
                                 </div>
+
                                 <div class="overflow-x-auto">
                                     <table class="table align-middle">
                                         <thead class="table-warning">
@@ -608,8 +630,15 @@
                         </div>
                         <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="wallet-tab">
                             <section class="">
-                                <div class="fs-4 fw-bold mb-lg-3 mb-md-3 mb-5 d-flex align-items-center justify-content-between"><i
-                                        class="fa-solid fa-bars me-3 d-lg-none d-block profile-sidetog"></i> Order</div>
+                                <div
+                                    class="fs-4 fw-bold mb-lg-3 mb-md-3 mb-5 d-flex align-items-center justify-content-between">
+                                    <!-- <i class="fa-solid fa-bars me-3 d-lg-none d-block profile-sidetog"></i> -->
+                                    <i class="fa-regular fa-user d-lg-none d-block profile-sidetog"></i>
+                                    Order
+                                    <div></div>
+                                </div>
+
+
                                 <div class="overflow-x-auto">
                                     <table class="table align-middle">
                                         <thead class="table-warning">
@@ -683,9 +712,14 @@
                         </div>
                         <div class="tab-pane fade" id="wallet" role="tabpanel" aria-labelledby="wallet-tab">
                             <section class="">
-                                <div class="fs-4 fw-bold mb-lg-3 mb-md-3 mb-5 d-flex align-items-center justify-content-between"><i
-                                        class="fa-solid fa-bars me-3 d-lg-none d-block profile-sidetog"></i> Wallet
+                                <div
+                                    class="fs-4 fw-bold mb-lg-3 mb-md-3 mb-5 d-flex align-items-center justify-content-between">
+                                    <!-- <i class="fa-solid fa-bars me-3 d-lg-none d-block profile-sidetog"></i> -->
+                                    <i class="fa-regular fa-user d-lg-none d-block profile-sidetog"></i>
+                                    Wallet
+                                    <div></div>
                                 </div>
+
                                 <div class="row justify-content-around px-0 mb-3 bg-main text-white">
                                     <div class="col-lg-auto col px-0">
                                         <div class="p-lg-2 p-md-3 px-2 p-1 py-3 text-center">
@@ -700,7 +734,20 @@
                                         </div>
                                     </div>
                                 </div>
-
+                                
+                                <div class="d-flex justify-content-end">
+                                    <div class="dropdown">
+                                        <button class="btn btn-dark dropdown-toggle" type="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Dropdown button
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Current balance</a></li>
+                                            <li><a class="dropdown-item" href="#">total expense</a></li>
+                                            <li><a class="dropdown-item" href="#">date</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
 
                                 <canvas id="myChart" style="width:100%"></canvas>
 
@@ -779,9 +826,51 @@
                                     </div>
                                 </div> -->
 
-                                <div class="bg-light p-2 mt-4">
+                                <!-- <div class="bg-light p-2 mt-4">
                                     <button class="btn bg-main text-white d-block ms-auto border-0"><i
                                             class="fa-solid fa-cart-shopping"></i> Purchased Credits</button>
+                                </div> -->
+                            </section>
+                        </div>
+                        <div class="tab-pane fade" id="paymenthis" role="tabpanel" aria-labelledby="paymenthis-tab">
+                            <section class="">
+                                <div
+                                    class="fs-4 fw-bold mb-lg-3 mb-md-3 mb-5 d-flex align-items-center justify-content-between">
+                                    <!-- <i class="fa-solid fa-bars me-3 d-lg-none d-block profile-sidetog"></i> -->
+                                    <i class="fa-regular fa-user d-lg-none d-block profile-sidetog"></i>
+                                    Payment History
+                                    <div></div>
+                                </div>
+
+
+                                <div class="overflow-x-auto">
+                                    <table class="table align-middle">
+                                        <thead class="table-warning">
+                                            <tr>
+                                                <th scope="col">order ID</th>
+                                                <th scope="col">Date/Time</th>
+                                                <th scope="col">Status</th>
+                                                <th scope="col">Amount</th>
+                                                <th scope="col">Method</th>
+                                                <th scope="col">Download</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">104234</th>
+                                                <td>2025-01-10 10:40:23</td>
+                                                <td>ready_to_ship</td>
+                                                <td class="text-success">$10</td>
+                                                <td>Wallet</td>
+                                                <td class="">
+                                                    <a href="order-details.html">
+                                                        <i class="fa-solid fa-download"></i>
+                                                    </a>
+                                                </td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
                                 </div>
                             </section>
                         </div>
@@ -881,13 +970,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
 
     <script>
-        var xValues = ["Total Expende", "Refill ", "Refill ", "Total current balance"];
-        var yValues = [55, 40, 44, 15];
+        var xValues = ["Refill", "Activation"];
+        var yValues = [55, 40];
         var barColors = [
             "#b91d47",
             "#00aba9",
-            "#e8c3b9",
-            "#1e7145"
         ];
 
         new Chart("myChart", {
