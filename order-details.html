@@ -20,6 +20,32 @@
             display: none !important;
         }
     }
+
+    .content {
+        font-size: 13px;
+        line-height: 18px;
+        display: -webkit-box;
+
+        /* Set your count of lines. Please note:  you should also change the count in the JS file */
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        transition: max-height 0.3s ease;
+    }
+    .read-more{
+        font-size: 13px;
+        cursor: pointer;
+    }
+
+    .content.expanded {
+        -webkit-line-clamp: unset;
+        max-height: none;
+    }
+
+    .content+.read-more.hidden {
+        display: none;
+    }
 </style>
 
 <body>
@@ -39,10 +65,21 @@
                     <img src="accets/images/Spark.webp" width="10%" height="10%" alt="">
                     <div class="fw-bold fs-5">
                         <div>Get esim (Qty:1)</div>
-                        <div class="fw-normal fs-xs my-2">
+                        <!-- <div class="fw-normal fs-xs my-2">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita repudiandae, optio
                             consectetur dicta quis distinctio voluptate sint, aperiam porro iure eveniet error
-                            repellendus? Nihil autem id labore explicabo, officia odio? <a class="text-decoration-underline fw-semibold" href="">Read more</a>
+                            repellendus? Nihil autem id labore explicabo, officia odio? <a
+                                class="text-decoration-underline fw-semibold" href="">Read more</a>
+                        </div> -->
+                        <div class="item">
+                            <p class="content m-0">
+                                Lorem ipsum odor amet, consectetuer adipiscing elit. Id malesuada urna laoreet porta;
+                                sed neque sollicitudin leo metus. Taciti posuere curae torquent habitasse venenatis et
+                                diam. Integer class tellus torquent curabitur quis quam suspendisse. Porta cras magnis
+                                integer cursus convallis. Lorem mi aptent eget ornare efficitur vel.Auctor ut magnis
+                                nibh lacinia mollis posuere torquent dictumst. Fermentum fringilla platea ut scelerisque
+                            </p>
+                            <a class="read-more">Read More</a>
                         </div>
                     </div>
                     <div>$1750.00</div>
@@ -68,6 +105,56 @@
         </div>
     </section>
     <!-- login end -->
+
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const readMoreButtons = document.querySelectorAll('.read-more');
+
+            // Count the number of text rows
+            function countTextRows(textElement) {
+                const computedStyle = window.getComputedStyle(textElement);
+
+                const textHeight = textElement.scrollHeight;
+                const lineHeight = parseFloat(computedStyle.lineHeight);
+                const numberOfRows = Math.round(textHeight / lineHeight);
+
+                return numberOfRows;
+            }
+
+            function updateButtonVisibility() {
+                readMoreButtons.forEach(button => {
+                    const content = button.closest('.item').querySelector('.content');
+                    const rows = countTextRows(content);
+
+                    // Set your count of lines
+                    rows <= 3 ?
+                        button.classList.add('hidden') :
+                        button.classList.remove('hidden');
+                });
+            }
+
+
+            readMoreButtons.forEach(button => {
+                const content = button.closest('.item').querySelector('.content');
+
+                button.addEventListener('click', function () {
+                    content.classList.toggle('expanded');
+
+                    content.classList.contains('expanded') ?
+                        button.textContent = 'Read Less' :
+                        button.textContent = 'Read More';
+                });
+            });
+
+            updateButtonVisibility();
+
+            window.addEventListener('resize', function () {
+                updateButtonVisibility();
+            });
+        });
+    </script>
 
 </body>
 
