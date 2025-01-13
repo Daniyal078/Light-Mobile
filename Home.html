@@ -14,6 +14,11 @@
     <title>Home</title>
 </head>
 
+<style>
+    .plans .accordion-button::after {
+        display: none;
+    }
+</style>
 <body>
     <div class="mask"></div>
 
@@ -106,53 +111,571 @@
     </div>
 
 
-    <section class="py-5 overflow-hidden">
+    <section class="py-5 overflow-hidden plans">
         <div class="container">
-            <div class="mb-5 text-center">
-                <div class="bg-black text-white px-2 py-1 fs-sm rounded d-inline-block">What we offer</div>
-                <div class="fs-1 fw-bold text-black text-center animate__animated animate__bounce">Plans and Pricings
-                </div>
+            <div class="mb-3 text-center">
+                <div class="bg-black px-2 py-1 rounded fs-sm text-white d-inline-block">What we offer</div>
+                <div class="fs-1 my-3 mb-4 fw-bold text-black text-center">Active Plans and Pricings</div>
             </div>
 
-            <div class="row align-items-center justify-content-center gap-lg-0 gap-md-0 gap-3">
-                <div class="col-lg-4 col-md-4 col-10" data-aos="fade-left" data-aos-once="true"
+            <div class="row justify-content-center  gap-lg-0 gap-md-0 gap-3">
+                <div class="col-lg-3 col-md-4 col-10" data-aos="fade-left" data-aos-once="true"
                     data-aos-duration="2000">
-                    <div
-                        class="text-center bg-gradient shadow border-main p-lg-3 p-2 py-4 rounded-4 d-flex flex-column gap-1">
-                        <div class="fs-4 fw-medium">Light</div>
-                        <div class="text-main fw-bold fs-2">$15<span class="fs-6 fw-normal">/month</span></div>
-                        <div class="fs-3 fw-semibold">5GB</div>
-                        <a href="Product-details.html">
-                            <button class="btn btn-outline-main w-100 py-1">Get Started with Light</button>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-10 position-relative" data-aos="flip-right" data-aos-once="true"
-                    data-aos-duration="2000">
-                    <div
-                        class="text-center bg-gradient shadow border-main p-lg-3 p-2 mx-lg-4 py-4 py-4 rounded-4 d-flex flex-column gap-1 scale-2">
-                        <div class="bg-main p-1 rounded-3 position-relative w-100 z-1" style="top: -21px;"></div>
-                        <div class="fs-4 fw-medium">Bright</div>
-                        <div class="text-main fw-bold fs-2">$25<span class="fs-6 fw-normal">/month</span></div>
-                        <div class="fs-3 fw-semibold">10GB</div>
-                        <a href="Product-details.html">
-                            <button class="btn btn-outline-main w-100 py-1">Get Started with Bright</button>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-10" data-aos="fade-right" data-aos-once="true"
-                    data-aos-duration="2000">
-                    <div
-                        class="text-center bg-gradient shadow border-main p-lg-3 p-2 py-4 rounded-4 d-flex flex-column gap-1">
-                        <div class="fs-4 fw-medium">Pro</div>
-                        <div class="text-main fw-bold fs-2">$35<span class="fs-6 fw-normal">/month</span></div>
-                        <div class="fs-3 fw-semibold">Unlimited</div>
-                        <a href="Product-details.html">
-                            <button class="btn btn-outline-main w-100 py-1">Get Started with Pro</button>
-                        </a>
-                    </div>
-                </div>
+                    <div class=" bg-gradient shadow border-main p-3 py-4 rounded-4 d-flex flex-column gap-1">
+                        <div class="fs-4 fw-medium text-center">Spark</div>
+                        <div class="text-main fw-bold text-center fs-2">$15<span class="fs-6 fw-normal">/month</span>
+                        </div>
+                        <div class="fs-3 fw-semibold text-center">1GB</div>
 
+
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item border-0 bg-transparent">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button justify-content-center collapsed py-2" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false"
+                                        aria-controls="collapseOne">
+                                        Read more
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body fs-xs p-0">
+
+                                        <div class="my-3">Choose a subscription plan:</div>
+                                        <div class="d-flex align-baseline my-2 gap-1">
+                                            <input type="radio" name="" id="">
+                                            <label class="pointer" for="">$15.00 1 Month Subscription</label>
+                                        </div>
+
+                                        <div class="d-flex align-baseline my-2 gap-1">
+                                            <input type="radio" name="" id="">
+                                            <label for=""><span
+                                                    class="pointer text-decoration-line-through text-muted">$45.00</span>
+                                                <span class="fw-semibold text-decoration-underline">$40.50</span> (10%
+                                                Discount) 3
+                                                Month Subscription</label>
+                                        </div>
+
+                                        <div class="d-flex align-baseline my-2 gap-1">
+                                            <input type="radio" name="" id="">
+                                            <label for=""><span
+                                                    class="pointer text-decoration-line-through text-muted">$90.00</span>
+                                                <span class="fw-semibold text-decoration-underline">$76.50</span> (15%
+                                                Discount) 6
+                                                Month Subscription</label>
+                                        </div>
+
+
+                                        <p class="fs-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            Officia, earum. Quam
+                                            accusamus eius
+                                            rem molestiae, mollitia saepe. Officia, facere saepe?
+                                        </p>
+
+                                        <div class="fw-semibold mb-2">includes:</div>
+
+                                        <ul class="fs-xs">
+                                            <li>sit amet consectetur adipisicing elit. Nisi, eaque!</li>
+                                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                                            <li>Lorem ipsum dolor sit.</li>
+                                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime.</li>
+                                            <li>Lorem ipsum dolor sit.</li>
+                                        </ul>
+
+                                        <a class="text-decoration-underline fs-xs text-main"
+                                            href="Product-details.html">View Privacy Policy</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a class="w-100" href="Product-details.html">
+                            <button class="btn btn-outline-main rounded-pill w-100 py-1 fs-sm">Activate</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-10" data-aos="flip-right" data-aos-once="true"
+                    data-aos-duration="2000">
+                    <div class="bg-gradient shadow border-main p-3 py-4 rounded-4 d-flex flex-column gap-1">
+                        <div class="bg-main p-1 rounded-3 position-relative w-100 z-1" style="top: -30px;"></div>
+                        <div class="fs-4 fw-medium text-center">Light</div>
+                        <div class="text-main fw-bold text-center fs-2">$25<span class="fs-6 fw-normal">/month</span>
+                        </div>
+                        <div class="fs-3 fw-semibold text-center">5GB</div>
+
+
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item border-0 bg-transparent">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button justify-content-center collapsed py-2" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                                        aria-controls="collapseTwo">
+                                        Read more
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body p-0 fs-xs">
+                                        <div class="my-3">Choose a subscription plan:</div>
+                                        <div class="d-flex align-baseline my-2 gap-1">
+                                            <input type="radio" name="" id="">
+                                            <label class="pointer" for="">$15.00 1 Month Subscription</label>
+                                        </div>
+
+                                        <div class="d-flex align-baseline my-2 gap-1">
+                                            <input type="radio" name="" id="">
+                                            <label for=""><span
+                                                    class="pointer text-decoration-line-through text-muted">$45.00</span>
+                                                <span class="fw-semibold text-decoration-underline">$40.50</span> (10%
+                                                Discount) 3
+                                                Month Subscription</label>
+                                        </div>
+
+                                        <div class="d-flex align-baseline my-2 gap-1">
+                                            <input type="radio" name="" id="">
+                                            <label for=""><span
+                                                    class="pointer text-decoration-line-through text-muted">$90.00</span>
+                                                <span class="fw-semibold text-decoration-underline">$76.50</span> (15%
+                                                Discount) 6
+                                                Month Subscription</label>
+                                        </div>
+
+
+                                        <p class="fs-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            Officia, earum. Quam
+                                            accusamus eius
+                                            rem molestiae, mollitia saepe. Officia, facere saepe?
+                                        </p>
+
+                                        <div class="fw-semibold mb-2">includes:</div>
+
+                                        <ul class="fs-xs">
+                                            <li>sit amet consectetur adipisicing elit. Nisi, eaque!</li>
+                                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                                            <li>Lorem ipsum dolor sit.</li>
+                                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime.</li>
+                                            <li>Lorem ipsum dolor sit.</li>
+                                        </ul>
+
+                                        <a class="text-decoration-underline fs-xs text-main"
+                                            href="Product-details.html">View Privacy Policy</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <a class="w-100" href="Product-details.html">
+                            <button class="btn btn-outline-main rounded-pill w-100 py-1 fs-sm">Activate</button>
+                        </a>
+                        <!-- <div class="d-flex align-items-center mt-2">
+                            <a class="w-100" href="Refill.html">
+                                <button
+                                    class="btn btn-outline-main border-start-0 rounded-start w-100 py-1 fs-sm">Refill</button>
+                            </a>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-10" data-aos="flip-right" data-aos-once="true"
+                    data-aos-duration="2000">
+                    <div class="bg-gradient shadow border-main p-3 py-4 rounded-4 d-flex flex-column gap-1">
+                        <div class="bg-main p-1 rounded-3 position-relative w-100 z-1" style="top: -30px;"></div>
+                        <div class="fs-4 fw-medium text-center">Bright</div>
+                        <div class="text-main fw-bold text-center fs-2">$35<span class="fs-6 fw-normal">/month</span>
+                        </div>
+                        <div class="fs-3 fw-semibold text-center">10GB</div>
+
+
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item border-0 bg-transparent">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button justify-content-center collapsed py-2" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        Read more
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body p-0 fs-xs">
+                                        <div class="my-3">Choose a subscription plan:</div>
+                                        <div class="d-flex align-baseline my-2 gap-1">
+                                            <input type="radio" name="" id="">
+                                            <label class="pointer" for="">$15.00 1 Month Subscription</label>
+                                        </div>
+
+                                        <div class="d-flex align-baseline my-2 gap-1">
+                                            <input type="radio" name="" id="">
+                                            <label for=""><span
+                                                    class="pointer text-decoration-line-through text-muted">$45.00</span>
+                                                <span class="fw-semibold text-decoration-underline">$40.50</span> (10%
+                                                Discount) 3
+                                                Month Subscription</label>
+                                        </div>
+
+                                        <div class="d-flex align-baseline my-2 gap-1">
+                                            <input type="radio" name="" id="">
+                                            <label for=""><span
+                                                    class="pointer text-decoration-line-through text-muted">$90.00</span>
+                                                <span class="fw-semibold text-decoration-underline">$76.50</span> (15%
+                                                Discount) 6
+                                                Month Subscription</label>
+                                        </div>
+
+
+                                        <p class="fs-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            Officia, earum. Quam
+                                            accusamus eius
+                                            rem molestiae, mollitia saepe. Officia, facere saepe?
+                                        </p>
+
+                                        <div class="fw-semibold mb-2">includes:</div>
+
+                                        <ul class="fs-xs">
+                                            <li>sit amet consectetur adipisicing elit. Nisi, eaque!</li>
+                                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                                            <li>Lorem ipsum dolor sit.</li>
+                                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime.</li>
+                                            <li>Lorem ipsum dolor sit.</li>
+                                        </ul>
+
+                                        <a class="text-decoration-underline fs-xs text-main"
+                                            href="Product-details.html">View Privacy Policy</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <a class="w-100" href="Product-details.html">
+                            <button class="btn btn-outline-main rounded-pill w-100 py-1 fs-sm">Activate</button>
+                        </a>
+                        <!-- <div class="d-flex align-items-center mt-2">
+                            <a class="w-100" href="Refill.html">
+                                <button
+                                    class="btn btn-outline-main border-start-0 rounded-start w-100 py-1 fs-sm">Refill</button>
+                            </a>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-10 mt-lg-0 mt-md-4" data-aos="fade-right" data-aos-once="true"
+                    data-aos-duration="2000">
+                    <div class="bg-gradient shadow border-main p-3 py-4 rounded-4 d-flex flex-column gap-1">
+                        <div class="fs-4 fw-medium text-center">Pro</div>
+                        <div class="text-main fw-bold text-center fs-2">$45<span class="fs-6 fw-normal">/month</span>
+                        </div>
+                        <div class="fs-3 fw-semibold text-center">Unlimited</div>
+
+
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item border-0 bg-transparent">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button justify-content-center collapsed py-2" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
+                                        aria-controls="collapseFour">
+                                        Read more
+                                    </button>
+                                </h2>
+                                <div id="collapseFour" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body p-0 fs-xs">
+                                        <div class="my-3">Choose a subscription plan:</div>
+                                        <div class="d-flex align-baseline my-2 gap-1">
+                                            <input type="radio" name="" id="">
+                                            <label class="pointer" for="">$15.00 1 Month Subscription</label>
+                                        </div>
+
+                                        <div class="d-flex align-baseline my-2 gap-1">
+                                            <input type="radio" name="" id="">
+                                            <label for=""><span
+                                                    class="pointer text-decoration-line-through text-muted">$45.00</span>
+                                                <span class="fw-semibold text-decoration-underline">$40.50</span> (10%
+                                                Discount) 3
+                                                Month Subscription</label>
+                                        </div>
+
+                                        <div class="d-flex align-baseline my-2 gap-1">
+                                            <input type="radio" name="" id="">
+                                            <label for=""><span
+                                                    class="pointer text-decoration-line-through text-muted">$90.00</span>
+                                                <span class="fw-semibold text-decoration-underline">$76.50</span> (15%
+                                                Discount) 6
+                                                Month Subscription</label>
+                                        </div>
+
+
+                                        <p class="fs-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            Officia, earum. Quam
+                                            accusamus eius
+                                            rem molestiae, mollitia saepe. Officia, facere saepe?
+                                        </p>
+
+                                        <div class="fw-semibold mb-2">includes:</div>
+
+                                        <ul class="fs-xs">
+                                            <li>sit amet consectetur adipisicing elit. Nisi, eaque!</li>
+                                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                                            <li>Lorem ipsum dolor sit.</li>
+                                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime.</li>
+                                            <li>Lorem ipsum dolor sit.</li>
+                                        </ul>
+
+                                        <a class="text-decoration-underline fs-xs text-main"
+                                            href="Product-details.html">View Privacy Policy</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <a class="w-100" href="Product-details.html">
+                            <button class="btn btn-outline-main rounded-pill w-100 py-1 fs-sm">Activate</button>
+                        </a>
+                        <!-- <div class="d-flex align-items-center mt-2">
+                            <a class="w-100" href="Refill.html">
+                                <button
+                                    class="btn btn-outline-main border-start-0 rounded-start w-100 py-1 fs-sm">Refill</button>
+                            </a>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 overflow-hidden plans">
+        <div class="container">
+            <div class="mb-3 text-center">
+                <div class="bg-black px-2 py-1 rounded fs-sm text-white d-inline-block">What we offer</div>
+                <div class="fs-1 my-3 mb-4 fw-bold text-black text-center">Refill Plans and Pricings</div>
+            </div>
+
+            <div class="row justify-content-center gap-lg-0 gap-md-0 gap-3">
+                <div class="col-lg-3 col-md-4 col-10" data-aos="fade-left" data-aos-once="true"
+                    data-aos-duration="2000">
+                    <div class="bg-gradient shadow border-main p-3 py-4 rounded-4 d-flex flex-column gap-1">
+                        <div class="fs-4 fw-medium text-center">Spark</div>
+                        <div class="text-main fw-bold fs-2 text-center">$15<span class="fs-6 fw-normal">/month</span>
+                        </div>
+                        <div class="fs-3 fw-semibold text-center">1GB</div>
+
+
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item border-0 bg-transparent">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button justify-content-center collapsed py-2" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseOne1" aria-expanded="false"
+                                        aria-controls="collapseOne1">
+                                        Read more
+                                    </button>
+                                </h2>
+                                <div id="collapseOne1" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body fs-xs px-0">
+
+
+                                        <p class="fs-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            Officia, earum. Quam
+                                            accusamus eius
+                                            rem molestiae, mollitia saepe. Officia, facere saepe?
+                                        </p>
+
+                                        <div class="fw-semibold mb-2">includes:</div>
+
+                                        <ul class="fs-xs">
+                                            <li>sit amet consectetur adipisicing elit. Nisi, eaque!</li>
+                                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                                            <li>Lorem ipsum dolor sit.</li>
+                                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime.</li>
+                                            <li>Lorem ipsum dolor sit.</li>
+                                        </ul>
+
+                                        <a class="text-decoration-underline fs-xs text-main"
+                                            href="Product-details.html">View Privacy Policy</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <a class="w-100" href="Refill.html">
+                            <button class="btn btn-outline-main rounded-pill w-100 py-1 fs-sm">Refill</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-10" data-aos="flip-right" data-aos-once="true"
+                    data-aos-duration="2000">
+                    <div class="bg-gradient shadow border-main p-3 py-4 rounded-4 d-flex flex-column gap-1">
+                        <div class="bg-main p-1 rounded-3 position-relative w-100 z-1" style="top: -30px;"></div>
+                        <div class="fs-4 fw-medium text-center">Light</div>
+                        <div class="text-main fw-bold fs-2 text-center ">$25<span class="fs-6 fw-normal">/month</span>
+                        </div>
+                        <div class="fs-3 fw-semibold text-center">5GB</div>
+
+
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item border-0 bg-transparent">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button justify-content-center collapsed py-2" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseTwo2" aria-expanded="false"
+                                        aria-controls="collapseTwo2">
+                                        Read more
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo2" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body fs-xs px-0">
+                                        <p class="fs-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            Officia, earum. Quam
+                                            accusamus eius
+                                            rem molestiae, mollitia saepe. Officia, facere saepe?
+                                        </p>
+
+                                        <div class="fw-semibold mb-2">includes:</div>
+
+                                        <ul class="fs-xs">
+                                            <li>sit amet consectetur adipisicing elit. Nisi, eaque!</li>
+                                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                                            <li>Lorem ipsum dolor sit.</li>
+                                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime.</li>
+                                            <li>Lorem ipsum dolor sit.</li>
+                                        </ul>
+
+                                        <a class="text-decoration-underline fs-xs text-main"
+                                            href="Product-details.html">View Privacy Policy</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <a class="w-100" href="Refill.html">
+                            <button class="btn btn-outline-main rounded-pill w-100 py-1 fs-sm">Refill</button>
+                        </a>
+                        <!-- <div class="d-flex align-items-center mt-2">
+                            <a class="w-100" href="Refill.html">
+                                <button
+                                    class="btn btn-outline-main border-start-0 rounded-start w-100 py-1 fs-sm">Refill</button>
+                            </a>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-10" data-aos="flip-right" data-aos-once="true"
+                    data-aos-duration="2000">
+                    <div class="bg-gradient shadow border-main p-3 py-4 rounded-4 d-flex flex-column gap-1">
+                        <div class="bg-main p-1 rounded-3 position-relative w-100 z-1" style="top: -30px;"></div>
+                        <div class="fs-4 fw-medium text-center">Bright</div>
+                        <div class="text-main fw-bold fs-2 text-center">$35<span class="fs-6 fw-normal">/month</span>
+                        </div>
+                        <div class="fs-3 fw-semibold text-center">10GB</div>
+
+
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item border-0 bg-transparent">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button justify-content-center collapsed py-2" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseThree3" aria-expanded="false"
+                                        aria-controls="collapseThree3">
+                                        Read more
+                                    </button>
+                                </h2>
+                                <div id="collapseThree3" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body fs-xs px-0">
+
+
+                                        <p class="fs-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            Officia, earum. Quam
+                                            accusamus eius
+                                            rem molestiae, mollitia saepe. Officia, facere saepe?
+                                        </p>
+
+                                        <div class="fw-semibold mb-2">includes:</div>
+
+                                        <ul class="fs-xs">
+                                            <li>sit amet consectetur adipisicing elit. Nisi, eaque!</li>
+                                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                                            <li>Lorem ipsum dolor sit.</li>
+                                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime.</li>
+                                            <li>Lorem ipsum dolor sit.</li>
+                                        </ul>
+
+                                        <a class="text-decoration-underline fs-xs text-main"
+                                            href="Product-details.html">View Privacy Policy</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <a class="w-100" href="Refill.html">
+                            <button class="btn btn-outline-main rounded-pill w-100 py-1 fs-sm">Refill</button>
+                        </a>
+                        <!-- <div class="d-flex align-items-center mt-2">
+                            <a class="w-100" href="Refill.html">
+                                <button
+                                    class="btn btn-outline-main border-start-0 rounded-start w-100 py-1 fs-sm">Refill</button>
+                            </a>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-10 mt-lg-0 mt-md-4" data-aos="fade-right" data-aos-once="true"
+                    data-aos-duration="2000">
+                    <div class="bg-gradient shadow border-main p-3 py-4 rounded-4 d-flex flex-column gap-1">
+                        <div class="fs-4 fw-medium text-center">Pro</div>
+                        <div class="text-main fw-bold text-center fs-2">$45<span class="fs-6 fw-normal">/month</span>
+                        </div>
+                        <div class="fs-3 fw-semibold text-center">Unlimited</div>
+
+
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item border-0 bg-transparent">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button justify-content-center collapsed py-2" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseFour4" aria-expanded="false"
+                                        aria-controls="collapseFour4">
+                                        Read more
+                                    </button>
+                                </h2>
+                                <div id="collapseFour4" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body fs-xs px-0">
+
+
+                                        <p class="fs-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            Officia, earum. Quam
+                                            accusamus eius
+                                            rem molestiae, mollitia saepe. Officia, facere saepe?
+                                        </p>
+
+                                        <div class="fw-semibold mb-2">includes:</div>
+
+                                        <ul class="fs-xs">
+                                            <li>sit amet consectetur adipisicing elit. Nisi, eaque!</li>
+                                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                                            <li>Lorem ipsum dolor sit.</li>
+                                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime.</li>
+                                            <li>Lorem ipsum dolor sit.</li>
+                                        </ul>
+
+                                        <a class="text-decoration-underline fs-xs text-main"
+                                            href="Product-details.html">View Privacy Policy</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a class="w-100" href="Refill.html">
+                            <button class="btn btn-outline-main rounded-pill w-100 py-1 fs-sm">Refill</button>
+                        </a>
+                        <!-- <div class="d-flex align-items-center mt-2">
+                            <a class="w-100" href="Refill.html">
+                                <button
+                                    class="btn btn-outline-main border-start-0 rounded-start w-100 py-1 fs-sm">Refill</button>
+                            </a>
+                        </div> -->
+                    </div>
+                </div>
             </div>
         </div>
     </section>
