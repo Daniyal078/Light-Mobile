@@ -21,7 +21,10 @@
 
 
     .nav-tabs>.active li {
-        background-color: #ffa100 !important;
+        background-color: #ED1F26 !important;
+        color: #fff;
+    }
+    .nav-tabs>.active i {
         color: #fff;
     }
 
@@ -37,7 +40,7 @@
     <nav class="navbar navbar-expand-lg justify-content-center">
         <div class="container bg-white p-2 mx-lg-auto mx-md-auto mx-2 rounded-pill">
             <div class="d-flex justify-content-between border rounded-pill px-4 w-100">
-                <a class=" mx-0 my-2" href="Home.html"><img src="accets/images/Light-mobile-logo.png" width="80%"
+                <a class=" mx-0 my-2" href="Home.html"><img src="accets/images/Maga-mobile-logo.png" width="150px"
                         alt=""></a>
                 <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -49,39 +52,39 @@
                     <ul class="navbar-nav mx-auto align-items-lg-center gap-lg-2 gap-xl-4">
 
                         <li class="nav-item">
-                            <a class="nav-link fw-medium text-black" aria-current="page" href="Home.html">Home</a>
+                            <a class="nav-link text-red fs-6" aria-current="page" href="Home.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link fw-medium text-black" aria-current="page"  href="Pricing.html">Plans and Pricing</a>
+                            <a class="nav-link text-nowrap text-red fs-6" aria-current="page"
+                                href="Pricing.html">Pricing</a>
                         </li>
                         <div class="dropdown">
-                            <a class="dropdown-toggle fw-medium" href="#" role="button" data-bs-toggle="dropdown"
+                            <a class="dropdown-toggle text-red" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
                                 Services
                             </a>
 
                             <ul class="dropdown-menu p-0">
-                                <!-- <li><a class="dropdown-item py-3" href="Coverage.html">5G Coverage</a></li> -->
                                 <li><a class="dropdown-item py-3" href="Bring-your-own-phine.html">Bring your own
                                         phine</a></li>
                             </ul>
                         </div>
                         <li class="nav-item">
-                            <a class="nav-link fw-medium text-black" aria-current="page"
-                                href="Coverage.html">Coverage</a>
+                            <a class="nav-link text-red fs-6" aria-current="page" href="Coverage.html">Coverage</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link fw-medium text-black" aria-current="page"
-                                href="Contact-us.html">Contact</a>
+                            <a class="nav-link text-red fs-6" aria-current="page" href="Contact-us.html">Contact</a>
                         </li>
 
                     </ul>
                     <div class="d-lg-flex gap-2 mt-md-0 mt-2">
                         <a href="Login.html">
-                            <button class="btn bg-main btn-sm text-white px-3" type="submit">Login Now</button>
+                            <button class="btn bg-blue btn-sm text-nowrap text-white" type="submit">Login
+                                Now</button>
                         </a>
                         <a href="Register.html">
-                            <button class="btn bg-main btn-sm text-white px-3" type="submit">Register Now</button>
+                            <button class="btn bg-blue btn-sm text-nowrap text-white" type="submit">Register
+                                Now</button>
                         </a>
                     </div>
                 </div>
@@ -90,11 +93,11 @@
     </nav>
 
 
-    <section>
-        <div class="container mt-4 mb-5">
+    <section class="bg-body-tertiary py-5">
+        <div class="container">
             <div class="row flex-lg-row flex-column flex-sm-nowrap justify-content-center justify-content-sm-between">
-                <div class="col-xl-3 col-lg-3">
-                    <div class="rounded-3 p-2 profile-bg profile-sidenav h-100 shadow">
+                <div class="col-xl-3 col-lg-3 ">
+                    <div class="rounded-3 p-2 bg-white profile-bg profile-sidenav h-100 shadow">
                         <i
                             class="fa-regular fa-circle-xmark float-end m-2 d-lg-none d-block fs-4 profile-sideClose"></i>
                         <!-- Tabs Start -->
@@ -124,7 +127,7 @@
                                             <i class="fa-regular fa-address-card p-2 rounded-circle"></i>
                                             Account
                                         </div>
-                                        <i class="fa-solid fa-caret-right"></i>
+                                        <i class="fa-solid fa-caret-right text-red"></i>
                                     </li>
                                 </a>
                                 <a class="" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile"
@@ -135,7 +138,7 @@
                                             <i class="fa-solid fa-toilet-paper  p-2 rounded-circle"></i>
                                             Invoice
                                         </div>
-                                        <i class="fa-solid fa-caret-right"></i>
+                                        <i class="fa-solid fa-caret-right text-red"></i>
                                     </li>
                                 </a>
                                 <a class="" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact"
@@ -146,7 +149,7 @@
                                             <i class="fa-solid fa-truck-fast  p-2 rounded-circle"></i>
                                             Orders
                                         </div>
-                                        <i class="fa-solid fa-caret-right"></i>
+                                        <i class="fa-solid fa-caret-right text-red"></i>
                                     </li>
                                 </a>
                                 <a class="" id="paymenthis-tab" data-bs-toggle="tab" data-bs-target="#paymenthis"
@@ -157,7 +160,7 @@
                                             <i class="fa-solid fa-clock-rotate-left p-2 rounded-circle"></i>
                                             Payment History
                                         </div>
-                                        <i class="fa-solid fa-caret-right"></i>
+                                        <i class="fa-solid fa-caret-right text-red"></i>
                                     </li>
                                 </a>
                                 <a class="" id="wallet-tab" data-bs-toggle="tab" data-bs-target="#wallet" type="button"
@@ -168,7 +171,7 @@
                                             <i class="fa-solid fa-wallet  p-2 rounded-circle"></i>
                                             Wallet
                                         </div>
-                                        <i class="fa-solid fa-caret-right"></i>
+                                        <i class="fa-solid fa-caret-right text-red"></i>
                                     </li>
                                 </a>
                                 <li class="pointer d-flex align-items-center justify-content-between text-danger rounded py-2 px-2 list-group-item fs-6 my-1 py-1 fw-medium profile-sideClose"
@@ -185,7 +188,7 @@
                                 aria-hidden="true">
                                 <div class="modal-dialog">
                                     <div class="modal-content">
-                                        <div class="modal-header border-0">
+                                        <div class="modal-header border-0 pb-0">
                                             <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                 aria-label="Close"></button>
                                         </div>
@@ -197,7 +200,7 @@
                                                 <div class="text-main fw-bold fs-2">Logout!</div>
                                                 <div class="my-3">Are you sure you want to logout</div>
                                                 <button
-                                                    class="py-2 px-5 d-block mx-auto btn fw-medium bg-main text-white border-0 rounded-1 my-4 text-uppercase">Logout</button>
+                                                    class="py-2 px-5 d-block mx-auto btn fw-medium bg-red text-white border-0 rounded-1 my-4 text-uppercase">Logout</button>
                                             </div>
                                         </div>
                                     </div>
@@ -215,22 +218,23 @@
                                     <div class="tabs-content my-0 active" id="content-select-1">
                                         <div>
                                             <div
-                                                class="fs-4 fw-bold mb-lg-3 mb-md-3 mb-4 d-flex align-items-center justify-content-between">
-                                                <img class="d-lg-none d-block profile-sidetog" src="accets/images/img.icons87.png" width="25px" alt="">
+                                                class="fs-4 fw-bold mb-lg-3 mb-md-3 mb-4 text-red d-flex align-items-center justify-content-between">
+                                                <img class="d-lg-none d-block profile-sidetog"
+                                                    src="accets/images/img.icons87.png" width="25px" alt="">
                                                 Account Information
                                             </div>
                                             <div class="row">
                                                 <div class="col-lg-6 mt-3">
-                                                    <div class="bg-light p-3 rounded-3">
+                                                    <div class="bg-white p-3 rounded-3">
                                                         <div class="d-flex justify-content-between align-items-center">
-                                                            <div class="fw-medium fs-5">Name</div>
-                                                            <div><i class="fa-regular fa-pen-to-square text-main pointer"
+                                                            <div class="fw-medium fs-5 text-red">Name</div>
+                                                            <div><i class="fa-regular fa-pen-to-square text-red pointer"
                                                                     data-bs-toggle="modal"
                                                                     data-bs-target="#changeName"></i>
                                                             </div>
                                                         </div>
 
-                                                        <div class="fs-sm">John deo</div>
+                                                        <div class="fs-sm text-blue">John deo</div>
                                                     </div>
                                                     <div class="modal fade" id="changeName" tabindex="-1"
                                                         aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -259,7 +263,7 @@
                                                                     </div> -->
 
                                                                     <button
-                                                                        class="btn bg-main text-white px-5 mt-3 d-block mx-auto">
+                                                                        class="btn bg-red text-white px-5 mt-3 d-block mx-auto">
                                                                         Changes</button>
                                                                 </div>
                                                             </div>
@@ -267,16 +271,16 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-6 mt-3">
-                                                    <div class="bg-light p-3 rounded-3">
+                                                    <div class="bg-white p-3 rounded-3">
                                                         <div class="d-flex justify-content-between align-items-center">
-                                                            <div class="fw-medium fs-5">Address</div>
-                                                            <div><i class="fa-regular fa-pen-to-square text-main pointer"
+                                                            <div class="fw-medium fs-5 text-red">Address</div>
+                                                            <div><i class="fa-regular fa-pen-to-square text-red pointer"
                                                                     data-bs-toggle="modal"
                                                                     data-bs-target="#changeAddress"></i>
                                                             </div>
                                                         </div>
 
-                                                        <div class="fs-sm">
+                                                        <div class="fs-sm text-blue">
                                                             4095 SW 137 Ave #12
                                                             Miami Florida 33175</div>
                                                     </div>
@@ -398,7 +402,7 @@
                                                                     </div>
 
                                                                     <button
-                                                                        class="btn bg-main text-white px-5 mt-3 d-block mx-auto">
+                                                                        class="btn bg-red text-white px-5 mt-3 d-block mx-auto">
                                                                         Changes</button>
                                                                 </div>
 
@@ -407,16 +411,16 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-6 mt-3">
-                                                    <div class="bg-light p-3 rounded-3">
+                                                    <div class="bg-white p-3 rounded-3">
                                                         <div class="d-flex justify-content-between align-items-center">
-                                                            <div class="fw-medium fs-5">Email</div>
-                                                            <div><i class="fa-regular fa-pen-to-square text-main pointer"
+                                                            <div class="fw-medium fs-5 text-red">Email</div>
+                                                            <div><i class="fa-regular fa-pen-to-square text-red pointer"
                                                                     data-bs-toggle="modal"
                                                                     data-bs-target="#changeEmail"></i>
                                                             </div>
                                                         </div>
 
-                                                        <div class="fs-sm">John@gmail.com</div>
+                                                        <div class="fs-sm text-blue">John@gmail.com</div>
                                                     </div>
 
                                                     <!-- change email Modal -->
@@ -452,7 +456,7 @@
                                                                     </div> -->
 
                                                                     <button
-                                                                        class="btn bg-main text-white px-5 mt-3 d-block mx-auto">
+                                                                        class="btn bg-red text-white px-5 mt-3 d-block mx-auto">
                                                                         Changes</button>
                                                                 </div>
                                                             </div>
@@ -460,16 +464,16 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-6 mt-3">
-                                                    <div class="bg-light p-3 rounded-3">
+                                                    <div class="bg-white p-3 rounded-3">
                                                         <div class="d-flex justify-content-between align-items-center">
-                                                            <div class="fw-medium fs-5">Password</div>
-                                                            <div><i class="fa-regular fa-pen-to-square text-main pointer"
+                                                            <div class="fw-medium fs-5 text-red">Password</div>
+                                                            <div><i class="fa-regular fa-pen-to-square text-red pointer"
                                                                     data-bs-toggle="modal"
                                                                     data-bs-target="#changePassword"></i>
                                                             </div>
                                                         </div>
 
-                                                        <div class="fs-sm">**********</div>
+                                                        <div class="fs-sm text-blue">**********</div>
                                                     </div>
                                                     <!-- change password Modal -->
                                                     <div class="modal fade" id="changePassword" tabindex="-1"
@@ -505,7 +509,7 @@
                                                                     </div>
 
                                                                     <button
-                                                                        class="btn bg-main text-white px-5 mt-3 d-block mx-auto">
+                                                                        class="btn bg-red text-white px-5 mt-3 d-block mx-auto">
                                                                         Changes</button>
                                                                 </div>
                                                             </div>
@@ -516,16 +520,17 @@
                                             <div class="form-check form-switch mt-3 border-primary">
                                                 <input class="form-check-input" type="checkbox" role="switch"
                                                     id="flexSwitchCheckDefault">
-                                                <label class="form-check-label" for="flexSwitchCheckDefault">I'd
+                                                <label class="form-check-label text-blue"
+                                                    for="flexSwitchCheckDefault">I'd
                                                     like to receive promotional emails.</label>
                                             </div>
 
-                                            <button class="btn bg-main text-white px-5 mt-3">Save
+                                            <button class="btn bg-red text-white px-5 mt-3">Save
                                                 Changes</button>
 
                                             <div class="my-4">
-                                                <div class="fw-semibold fs-5">Delete Account</div>
-                                                <p class="my-2">You can delete your account permanently.
+                                                <div class="fw-semibold fs-5 text-red">Delete Account</div>
+                                                <p class="my-2 text-blue">You can delete your account permanently.
                                                     *Note
                                                     that
                                                     this
@@ -554,7 +559,7 @@
                                                                         your
                                                                         account</div>
                                                                     <button
-                                                                        class="py-2 px-5 d-block mx-auto btn fw-medium bg-main text-white border-0 rounded-1 my-4 text-uppercase">Logout</button>
+                                                                        class="py-2 px-5 d-block mx-auto btn fw-medium bg-red text-white border-0 rounded-1 my-4 text-uppercase">Logout</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -573,14 +578,15 @@
                         <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                             <section class="">
                                 <div
-                                    class="fs-4 fw-bold mb-lg-3 mb-md-3 mb-4 d-flex align-items-center justify-content-between">
-                                    <img class="d-lg-none d-block profile-sidetog" src="accets/images/img.icons87.png" width="25px" alt="">
+                                    class="fs-4 fw-bold mb-lg-3 mb-md-3 mb-4 text-red d-flex align-items-center justify-content-between">
+                                    <img class="d-lg-none d-block profile-sidetog" src="accets/images/img.icons87.png"
+                                        width="25px" alt="">
                                     Invoice
                                 </div>
 
                                 <div class="overflow-x-auto">
                                     <table class="table align-middle">
-                                        <thead class="table-warning">
+                                        <thead class="table-danger">
                                             <tr>
                                                 <th scope="col">Invoice No</th>
                                                 <th scope="col">Date</th>
@@ -608,15 +614,16 @@
                         <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="wallet-tab">
                             <section class="">
                                 <div
-                                    class="fs-4 fw-bold mb-lg-3 mb-md-3 mb-4 d-flex align-items-center justify-content-between">
-                                    <img class="d-lg-none d-block profile-sidetog" src="accets/images/img.icons87.png" width="25px" alt="">
+                                    class="fs-4 fw-bold mb-lg-3 mb-md-3 mb-4 text-red d-flex align-items-center justify-content-between">
+                                    <img class="d-lg-none d-block profile-sidetog" src="accets/images/img.icons87.png"
+                                        width="25px" alt="">
                                     Order
                                 </div>
 
 
                                 <div class="overflow-x-auto">
                                     <table class="table align-middle">
-                                        <thead class="table-warning">
+                                        <thead class="table-danger">
                                             <tr>
                                                 <th scope="col">Order</th>
                                                 <th scope="col">Date</th>
@@ -635,7 +642,8 @@
                                                 <td>$7 for 1 item</td>
                                                 <td>
                                                     <a href="View-order.html">
-                                                        <button class="btn btn-dark">View</button>
+                                                        <button
+                                                            class="bg-red border-0 p-2 btn text-white rounded-2">View</button>
                                                     </a>
                                                 </td>
                                             </tr>
@@ -645,7 +653,9 @@
                                                 <td>ready_to_ship</td>
                                                 <td class="text-success">Completed</td>
                                                 <td>$7 for 1 item</td>
-                                                <td><button class="btn btn-dark">View</button></td>
+                                                <td><button
+                                                        class="bg-red border-0 p-2 btn text-white rounded-2">View</button>
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <th scope="row">#970778</th>
@@ -653,7 +663,9 @@
                                                 <td>ready_to_ship</td>
                                                 <td class="text-success">Completed</td>
                                                 <td>$7 for 1 item</td>
-                                                <td><button class="btn btn-dark">View</button></td>
+                                                <td><button
+                                                        class="bg-red border-0 p-2 btn text-white rounded-2">View</button>
+                                                </td>
                                             </tr>
 
                                         </tbody>
@@ -664,138 +676,55 @@
                         <div class="tab-pane fade" id="wallet" role="tabpanel" aria-labelledby="wallet-tab">
                             <section class="">
                                 <div
-                                    class="fs-4 fw-bold mb-lg-3 mb-md-3 mb-4 d-flex align-items-center justify-content-between">
-                                    <img class="d-lg-none d-block profile-sidetog" src="accets/images/img.icons87.png" width="25px" alt="">
+                                    class="fs-4 fw-bold mb-lg-3 mb-md-3 mb-4 text-red d-flex align-items-center justify-content-between">
+                                    <img class="d-lg-none d-block profile-sidetog" src="accets/images/img.icons87.png"
+                                        width="25px" alt="">
                                     Wallet
                                 </div>
 
-                                <div class="row justify-content-around px-0 mb-3 bg-main text-white">
-                                    <div class="col-lg-auto col px-0">
-                                        <div class="p-lg-2 p-md-3 px-2 p-1 py-3 text-center">
-                                            <div class="fw-bold fs-4">5.99 Credits</div>
-                                            <div class="fw-semibold">Current Balance</div>
+                                <div class="border overflow-hidden bg-white">
+                                    <div class="row justify-content-around px-0 mb-3 bg-danger-subtle text-white">
+                                        <div class="col-lg-auto col px-0">
+                                            <div class="p-lg-2 p-md-3 px-2 text-black p-1 py-3 text-center">
+                                                <div class="fw-bold fs-4 text-red">5.99 Credits</div>
+                                                <div class="fw-semibold text-blue">Current Balance</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-auto col px-0">
+                                            <div class="p-lg-2 p-md-3 px-2 text-black p-1 py-3 text-center">
+                                                <div class="fw-bold fs-4 text-red">5000 Credits</div>
+                                                <div class="fw-semibold text-blue">Total Expense</div>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-auto col px-0">
-                                        <div class="p-lg-2 p-md-3 px-2 p-1 py-3 text-center">
-                                            <div class="fw-bold fs-4">5000 Credits</div>
-                                            <div class="fw-semibold">Total Expense</div>
-                                        </div>
+
+                                    <div class="d-flex justify-content-between p-3">
+                                        <input class="form-control w-auto" type="date" name="" id="">
                                     </div>
+                                    <!-- <div class="row"> -->
+                                    <!-- <div class="col-md"> -->
+                                    <!-- <canvas id="myChart" style="width:100%"></canvas> -->
+                                    <!-- </div> -->
+                                    <!-- <div class="col-md-8 p-3"> -->
+                                    <canvas class="mb-" id="myChart" style="width:100%"></canvas>
+                                    <!-- </div> -->
+                                    <!-- </div> -->
                                 </div>
-
-                                <div class="d-flex justify-content-between">
-                                    <input class="form-control w-auto" type="date" name="" id="">
-
-
-                                    <!-- <div class="dropdown">
-                                        <button class="btn btn-dark dropdown-toggle" type="button"
-                                            data-bs-toggle="dropdown" aria-expanded="false">
-                                            Dropdown button
-                                        </button>
-                                        <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="#">Current balance</a></li>
-                                            <li><a class="dropdown-item" href="#">total expense</a></li>
-                                            <li><a class="dropdown-item" href="#">date</a></li>
-                                        </ul>
-                                    </div> -->
-                                </div>
-
-                                <canvas id="myChart" style="width:100%"></canvas>
-
-                                <!-- <div class="bg-white rounded-3 shadow p-4">
-                                    <div
-                                        class="d-flex align-items-center justify-content-between mb-3 py-2 border-bottom">
-                                        <div>
-                                            <div class="fw-semibold">Monthly Offer</div>
-                                            <div class="fs-xs text-muted">Expires on 09-01-2025</div>
-                                        </div>
-                                        <div class="text-end">
-                                            <div class="fw-bold fs-5 text-main">$120</div>
-                                            <div class="fs-xs text-muted">Recharge Required</div>
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="d-flex align-items-center justify-content-between mb-3 py-2 border-bottom">
-                                        <div>
-                                            <div class="fw-medium">Monthly Offer Data</div>
-                                            <div class="fs-xs text-muted">7/20 GBs</div>
-                                        </div>
-                                        <div class="text-end w-50">
-                                            <div class="progress w-100">
-                                                <div class="progress-bar progress-bar-striped w-75 bg-black"
-                                                    role="progressbar" aria-valuenow="75" aria-valuemin="0"
-                                                    aria-valuemax="100"></div>
-                                            </div>
-                                            <div class="fs-xs text-muted">33% Used</div>
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="d-flex align-items-center justify-content-between mb-3 py-2 border-bottom">
-                                        <div>
-                                            <div class="fw-medium">Monthly Offer Data</div>
-                                            <div class="fs-xs text-muted">7/20 GBs</div>
-                                        </div>
-                                        <div class="text-end w-50">
-                                            <div class="progress w-100">
-                                                <div class="progress-bar progress-bar-striped w-25 bg-black"
-                                                    role="progressbar" aria-valuenow="75" aria-valuemin="0"
-                                                    aria-valuemax="100"></div>
-                                            </div>
-                                            <div class="fs-xs text-muted">33% Used</div>
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="d-flex align-items-center justify-content-between mb-3 py-2 border-bottom">
-                                        <div>
-                                            <div class="fw-medium">Monthly Offer Data</div>
-                                            <div class="fs-xs text-muted">7/20 GBs</div>
-                                        </div>
-                                        <div class="text-end w-50">
-                                            <div class="progress w-100">
-                                                <div class="progress-bar progress-bar-striped w-50 bg-black"
-                                                    role="progressbar" aria-valuenow="75" aria-valuemin="0"
-                                                    aria-valuemax="100"></div>
-                                            </div>
-                                            <div class="fs-xs text-muted">33% Used</div>
-                                        </div>
-                                    </div>
-                                </div> -->
-
-                                <!-- <canvas id="myChart" style="width: 100%; max-width: 100%; display: block;" width="781"
-                                    height="390" class="chartjs-render-monitor"></canvas> -->
-
-                                <!-- <div class="d-flex justify-content-around mt-4">
-                                    <div class="d-flex align-items-center gap-2 fs-4">
-                                        <div class="fw-semibold">Used</div>
-                                        =
-                                        <div class="fs-5 fw-bold text-danger">9,0234$</div>
-                                    </div>
-                                    <div class="d-flex align-items-center gap-2 fs-4">
-                                        <div class="fw-semibold">Purchase</div>
-                                        =
-                                        <div class="fs-5 fw-bold text-success">12,4344$</div>
-                                    </div>
-                                </div> -->
-
-                                <!-- <div class="bg-light p-2 mt-4">
-                                    <button class="btn bg-main text-white d-block ms-auto border-0"><i
-                                            class="fa-solid fa-cart-shopping"></i> Purchased Credits</button>
-                                </div> -->
                             </section>
                         </div>
                         <div class="tab-pane fade" id="paymenthis" role="tabpanel" aria-labelledby="paymenthis-tab">
                             <section class="">
                                 <div
-                                    class="fs-4 fw-bold mb-lg-3 mb-md-3 mb-4 d-flex align-items-center justify-content-between">
-                                    <img class="d-lg-none d-block profile-sidetog" src="accets/images/img.icons87.png" width="25px" alt="">
+                                    class="fs-4 fw-bold mb-lg-3 mb-md-3 mb-4 text-red d-flex align-items-center justify-content-between">
+                                    <img class="d-lg-none d-block profile-sidetog" src="accets/images/img.icons87.png"
+                                        width="25px" alt="">
                                     Payment History
                                 </div>
 
 
                                 <div class="overflow-x-auto">
                                     <table class="table align-middle">
-                                        <thead class="table-warning">
+                                        <thead class="table-danger">
                                             <tr>
                                                 <th scope="col">order ID</th>
                                                 <th scope="col">Date/Time</th>
@@ -836,55 +765,53 @@
             <div class="row justify-content-center">
                 <div class="col-lg-3 col-md-9 mb-lg-0 mb-4">
                     <div class="my-4 text-center"><a href="Home.html">
-                            <img src="accets/images/footer-logo.png" width="70%" alt=""></a>
+                            <img src="accets/images/Maga-mobile-logo.png" width="70%" alt=""></a>
                     </div>
                     <div class="text-center">
-                        <i class="fa-brands fs-4 p-2 rounded-circle border fa-facebook"></i>
-                        <i class="fa-brands fs-4 p-2 rounded-circle border fa-square-instagram"></i>
-                        <i class="fa-brands fs-4 p-2 rounded-circle border fa-square-twitter"></i>
+                        <i class="fa-brands mx-3 text-blue fs-4 fa-facebook"></i>
+                        <i class="fa-brands mx-3 text-blue fs-4 fa-square-instagram"></i>
+                        <i class="fa-brands mx-3 text-blue fs-4 fa-square-twitter"></i>
                     </div>
 
                 </div>
                 <div class="col-lg-3 col-md-4 mb-lg-0 mb-4">
-                    <div class="fw-bold fs-5 mb-3">Service Features</div>
-                    <ul class="list-unstyled">
+                    <div class="fw-bold text-red fs-5 mb-3">Service Features</div>
+                    <ul class="list-unstyled text-blue">
                         <li class="my-2 fw-normal"><a href="#"><i class="fa-solid fa-angle-right text-main me-2"></i>
                                 Service Plans</a></li>
-                        <li class="my-2 fw-normal"><a href="Coverage.html"><i
-                                    class="fa-solid fa-angle-right text-main me-2"></i>
+                        <li class="my-2 fw-normal"><a href="Coverage.html"><i class="fa-solid fa-angle-right me-2"></i>
                                 5G Coverage</a></li>
                         <li class="my-2 fw-normal"><a href="Bring-your-own-phine.html"><i
-                                    class="fa-solid fa-angle-right text-main me-2"></i>
+                                    class="fa-solid fa-angle-right me-2"></i>
                                 Bring Your Own Phone</a></li>
                         <li class="my-2 fw-normal"><a href="Wifi-calling.html"><i
-                                    class="fa-solid fa-angle-right text-main me-2"></i>
+                                    class="fa-solid fa-angle-right me-2"></i>
                                 Wi-Fi Calling</a></li>
                         <li class="my-2 fw-normal"><a href="Mobile-Hotspot.html"><i
-                                    class="fa-solid fa-angle-right text-main me-2"></i>
+                                    class="fa-solid fa-angle-right me-2"></i>
                                 Mobile Hotspot</a></li>
 
                     </ul>
                 </div>
                 <div class="col-lg-3 col-md-4 mb-lg-0 mb-4">
-                    <div class="fw-bold fs-5 mb-3">About Light Mobile</div>
+                    <div class="fw-bold text-red fs-5 mb-3">About Maga mobile</div>
 
-                    <ul class="list-unstyled">
+                    <ul class="list-unstyled text-blue">
                         <li class="my-2 fw-normal"><a href="Who-we-are.html"><i
-                                    class="fa-solid fa-angle-right text-main me-2"></i>
+                                    class="fa-solid fa-angle-right me-2"></i>
                                 Who We Are</a></li>
-                        <li class="my-2 fw-normal"><a href="Blogs.html"><i
-                                    class="fa-solid fa-angle-right text-main me-2"></i>
+                        <li class="my-2 fw-normal"><a href="Blogs.html"><i class="fa-solid fa-angle-right me-2"></i>
                                 Blogs</a></li>
-                        <li class="my-2 fw-normal"><a href="FAQ.html"><i
-                                    class="fa-solid fa-angle-right text-main me-2"></i>
+                        <li class="my-2 fw-normal"><a href="FAQ.html"><i class="fa-solid fa-angle-right me-2"></i>
                                 FAQ</a></li>
 
                     </ul>
                 </div>
                 <div class="col-lg-3 col-md-4 mb-lg-0">
-                    <div class="fw-bold fs-5 mb-3">Support</div>
-                    <ul class="list-unstyled">
-                        <li class="my-2 fw-normal"><a href="#"><i class="fa-solid fa-angle-right text-main me-2"></i>
+                    <div class="fw-bold text-red fs-5 mb-3">Support</div>
+                    <ul class="list-unstyled text-blue">
+                        <li class="my-2 fw-normal"><a href="The-help-center.html"><i
+                                    class="fa-solid fa-angle-right me-2"></i>
                                 The Help Center</a></li>
                     </ul>
                 </div>
@@ -892,11 +819,11 @@
         </div>
 
 
-        <div class="bg-black">
-            <div class="py-2 container border-top border-dark text-white">
+        <div class="bg-red text-white">
+            <div class="py-2 container border-top border-dark">
                 <div class="row gap-lg-0 gap-md-0 gap-3">
                     <div class="col-lg-6 text-center">
-                        2024 Light Mobile. All rights are reserved.
+                        2024 Maga mobile. All rights are reserved.
                     </div>
                     <div class="col-lg-6">
                         <ul
@@ -923,7 +850,7 @@
         var xValues = ["Refill", "Activation"];
         var yValues = [55, 40];
         var barColors = [
-            "#b91d47",
+            "#3300ff",
             "#00aba9",
         ];
 

@@ -4180,14 +4180,14 @@ fieldset:disabled .btn {
 .dropdown-item:focus,
 .dropdown-item:hover {
     color: #ffff;
-    background-color: #F3A50D
+    background-color: #000000
 }
 
 .dropdown-item.active,
 .dropdown-item:active {
     color: #fff;
     text-decoration: none;
-    background-color: #F3A50D
+    background-color: #000000
 }
 
 .dropdown-item.disabled,
@@ -4622,7 +4622,7 @@ fieldset:disabled .btn {
 .navbar-toggler:focus {
     text-decoration: none;
     outline: 0;
-    box-shadow: 0 0 0 var(--bs-navbar-toggler-focus-width)
+    /* box-shadow: 0 0 0 var(--bs-navbar-toggler-focus-width) */
 }
 
 .navbar-toggler-icon {

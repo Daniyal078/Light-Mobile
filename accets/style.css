@@ -16,7 +16,8 @@ body {
 
 
 :root {
-    --main-color: #F3A50D;
+    --main-color-red: #ED1F26;
+    --main-color-blue: #253A96;
 }
 
 .btn:hover {
@@ -27,6 +28,7 @@ body {
     cursor: pointer;
 }
 
+
 .hover-white:hover {
     color: #fff !important;
 }
@@ -35,62 +37,86 @@ body {
     background-color: #616060 !important;
 }
 
-.bg-main {
-    background-color: var(--main-color);
-}
 
-.bg-main-light {
+.bg-red-light {
     background: linear-gradient(20deg, #ffffff, #fffacf) !important;
 }
 
-.bg-main-light {
+.bg-red-light {
     background: #ffeecd;
 }
 
 .bg-gradient {
-    background: linear-gradient(180deg, #ffeecd, #fff) !important;
+    background: linear-gradient(180deg, #FFF4F4, #EEF1FF) !important;
 }
 
-.btn-outline-main {
-    border: 1px solid var(--main-color);
+.btn-outline-red {
+    border: 1px solid var(--main-color-red);
     border-radius: 50px;
-    color: var(--main-color);
+    color: var(--main-color-red);
 }
 
-.btn-outline-main:hover {
-    background-color: var(--main-color);
+.btn-outline-blue {
+    border: 1px solid var(--main-color-blue);
+    border-radius: 50px;
+    color: var(--main-color-blue);
+}
+
+.btn-outline-red:hover {
+    background-color: var(--main-color-red);
     border-radius: 50px;
     color: #fff;
 }
 
-.border-main {
-    border: 2px solid #ffd684;
+.btn-outline-blue:hover {
+    background-color: var(--main-color-blue);
+    border-radius: 50px;
+    color: #fff;
 }
 
-.text-main {
-    color: var(--main-color);
+.border-red {
+    border: 2px solid var(--main-color-red);
+}
+
+.border-blue {
+    border: 2px solid var(--main-color-blue);
+}
+
+.text-red {
+    color: var(--main-color-red);
+}
+.text-blue {
+    color: var(--main-color-blue);
+}
+
+.bg-red {
+    background-color: var(--main-color-red);
+}
+
+.bg-blue {
+    background-color: var(--main-color-blue);
 }
 
 .home-hero-section {
-    background: linear-gradient(to bottom, #fde2ab, #fff, #fff, #fff, #fde2ab);
+    background: linear-gradient(to bottom, #FFF4F4, #EEF1FF);
 }
 
 .fs-xs {
     font-size: small;
 }
 
-
 .bg-blur {
     backdrop-filter: blur(30px);
 }
 
 .accordion-button {
-    background-color: #FFF8EA;
-    font-weight: 600;
+    background-color: var(--main-color-blue);
+    color: #fff;
 }
 
 .accordion-button:not(.collapsed) {
-    background-color: #fde2ab !important;
+    color: #fff;
+    background-color: var(--main-color-red) !important;
 }
 
 .accordion-button:not(.collapsed)::after {
@@ -173,7 +199,7 @@ th, td{
     }
 }
 
-@media screen and (max-width:992px) {
+@media screen and (max-width:991px) {
     .navbar-collapse {
         position: fixed;
         top: 0;

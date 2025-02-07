@@ -22,13 +22,14 @@
             <div class="container">
                 <div class="bg-white d-block mx-auto border rounded-3 col-lg-5 col-md-8 col-11 py-4 px-md-5 px-3">
                     <a href="Home.html">
-                        <img class="mx-auto d-block" src="accets/images/Light-mobile-logo.png" width="200px" alt="">
+                        <img class="mx-auto d-block" src="accets/images/Maga-mobile-logo.png" width="200px" alt="">
                     </a>
                     <div class="d-flex align-items-center justify-content-center gap-3">
                         <button
-                            class="py-2 px-4 fw-medium btn bg-main shadow text-white border-0 rounded-1 my-3 text-uppercase">Customer</button>
+                            class="py-2 px-4 fw-medium btn bg-red shadow text-white border-0 rounded-1 my-3 text-uppercase">Customer</button>
                         <button
-                            class="py-2 px-4 fw-medium shadow hover-white btn text-black  border-0 rounded-1 my-3 text-uppercase">Dealer</button>
+                            class="py-2 px-4 fw-medium shadow hover-white btn text-black  border-0 rounded-1 my-3 text-uppercase"
+                            data-bs-toggle="modal" data-bs-target="#DealerLog">Dealer</button>
                     </div>
 
                     <!-- Dealer Modal -->
@@ -42,7 +43,7 @@
                                 </div>
                                 <div class="modal-body pt-0">
                                     <img class="d-block mx-auto"
-                                        src="https://img.freepik.com/free-vector/login-concept-illustration_114360-4525.jpg"
+                                        src="https://img.freepik.com/free-vector/sign-concept-illustration_114360-125.jpg"
                                         width="30%" alt="">
                                     <div class="text-center">
                                         <div class="text-main fw-bold fs-2">Welcome Back Dealer!</div>
@@ -52,7 +53,7 @@
                                         </div>
 
                                         <button
-                                            class="py-2 px-5 d-block mx-auto btn fw-medium bg-main text-white border-0 rounded-1 my-4 text-uppercase">Continue</button>
+                                            class="py-2 px-5 d-block mx-auto btn fw-medium bg-red text-white border-0 rounded-1 my-4 text-uppercase">Continue</button>
                                     </div>
                                 </div>
                             </div>
@@ -79,11 +80,38 @@
                     </div>
 
                     <button
-                        class="py-2 px-5 d-block mx-auto btn fw-medium bg-main text-white border-0 rounded-1 my-4 text-uppercase"
-                        data-bs-toggle="modal" data-bs-target="#DealerLog">Log
-                        in</button>
+                        class="py-2 px-5 d-block mx-auto btn fw-medium bg-red text-white border-0 rounded-1 my-4 text-uppercase" 
+                        data-bs-toggle="modal" data-bs-target="#Login">Log in</button>
 
-                    <div class="text-center my-3 font-sm">To register for a new Light mobile account, <a
+                    <!-- Login Modal -->
+                    <div class="modal fade" id="Login" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header border-0">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body pt-0">
+                                    <img class="d-block mx-auto"
+                                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVXXkZLgsEXDC4WzxqOq0G2QVQxPKjCCigGA&s"
+                                        width="30%" alt="">
+                                    <div class="text-center">
+                                        <div class="text-main fw-bold fs-2">Login Successful!</div>
+                                        <div class="my-3">You are now logged in with access to your exclusive dealer
+                                            pricing. Explore
+                                            the latest deals and manage your order with your special rates applied.
+                                        </div>
+
+                                        <button
+                                            class="py-2 px-5 d-block mx-auto btn fw-medium bg-red text-white border-0 rounded-1 my-4 text-uppercase">Continue</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="text-center my-3 font-sm">To register for a new Maga mobile account, <a
                             href="Register.html" class="text-main fw-semibold">click
                             here to register</a>
                         <span>. after sign up, be sure to check your email for the instructions.</span>
